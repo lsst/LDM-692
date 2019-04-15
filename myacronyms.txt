@@ -1,0 +1,6 @@
+DMTR: DM Test (Plan and) Report
+LVV: LSST Verification and Validation (Jira project)
+NA: Not Available
+ICD: Interface Control Document
+CA-DM-SUP-ICD: ICD requirements between Camera and DM 
+DMS-REQ: Data Management top level requirements
