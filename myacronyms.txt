@@ -3,7 +3,7 @@ LVV: LSST Verification and Validation (Jira project)
 NA: Not Available
 ICD: Interface Control Document
 CA-DM-SUP-ICD: Requirements for Support-Data Exchanges between Data Management and Camera (\citeds{LSE-130})
-DMS-REQ: Data Management top level requirements (\citeds{LSE-61}
+DMS-REQ: Data Management top level requirements (\citeds{LSE-61})
 CA-DM-DAQ-ICD: Requirements for Camera Data Acquisition Interface (\citeds{LSE-68})
 CA-DM-CON-ICD: Requirements for Interface between the Camera and Data Management (\citeds{LSE-69})
 OCS-DM-COM-ICD: Requirements for OCS - Data Management Software Communication Interface (\citeds{LSE-72})
