@@ -16,7 +16,8 @@ endif
 
 $(DOCNAME).pdf: $(DOCNAME).tex meta.tex aglossary.tex
 	latexmk -bibtex -xelatex -f $(DOCNAME).tex
-
+	makeglossaries $(DOCNAME)
+	xelatex $(DOCNAME).tex
 .FORCE:
 
 meta.tex: Makefile .FORCE
