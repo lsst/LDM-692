@@ -1,18 +1,20 @@
 sudo: true
-dist: trusty
+dist: xenial
 services:
   - docker
 language: python
 python:
-  - '3.5'
+  - '3.7'
 before_install:
-  - "pip install 'lander>=0.1.0,<0.2'"
+  - pip install 'lander>=0.1.0,<0.2'
 script:
   # Compile PDF using containerized lsst-texmf
   - "docker run --rm -v `pwd`:/workspace -w /workspace lsstsqre/lsst-texmf:latest sh -c 'make'"
-after_success:
   # Deploy website. See https://github.com/lsst-sqre/lander for CLI options
-  - 'lander --upload --ltd-product ldm-692 --pdf LDM-692.pdf --env travis --handle LDM-692 --title "DM Verification Control Document"'
+  - 'lander --upload --ltd-product ldm-692 --pdf LDM-692.pdf --lsstdoc LDM-692.tex --env=travis'
+env:
+  global:
+
 env:
   global:
     # LSST the Docs credentials
