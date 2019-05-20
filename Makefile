@@ -13,7 +13,7 @@ ifneq "$(GITSTATUS)" ""
 	GITDIRTY = -dirty
 endif
 
-$(DOCNAME).pdf: $(DOCNAME).tex meta.tex acronyms.tex
+$(DOCNAME).pdf: $(DOCNAME).tex meta.tex aglossary.tex
 	latexmk -bibtex -xelatex -f $(DOCNAME).tex
 
 .FORCE:
@@ -27,9 +27,9 @@ meta.tex: Makefile .FORCE
 	/bin/echo '\newcommand{\vcsrevision}{$(GITVERSION)$(GITDIRTY)}' >>$@
 	/bin/echo '\newcommand{\vcsdate}{$(GITDATE)}' >>$@
 
-acronyms.tex : ${TEX} myacronyms.txt skipacronyms.txt
+aglossary.tex : ${TEX} myacronyms.txt skipacronyms.txt
 	echo ${TEXMFHOME}
-	python3 ${TEXMFHOME}/../bin/generateAcronyms.py   $(TEX)
+	python3 ${TEXMFHOME}/../bin/generateAcronyms.py -g   $(TEX)
 
 myacronyms.txt :
 	touch myacronyms.txt
