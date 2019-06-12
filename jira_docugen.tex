@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
 % using template at <template>.
 % Collecting data for component: "DM"
-% using docsteady version 1.1.3.post15+g71a5835.d20190612
+% using docsteady version 1.1.3.post16+g1a55583.d20190612
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -11,8 +11,8 @@
 
 \section{Summary Information}\label{sec:summary}
 
-Following summary is provided as an overview of the DM coverage.
-The first subsection \ref{sec:versum} shows how many requirements and verificaiton elements
+The following summary is provided as an overview of the DM coverage.
+The first subsection \ref{sec:versum} shows how many requirements and verification elements
 are covered based on the test cases results.
 The second subsection \ref{sec:prosum} shows the Jira status count for test cases and  verification elements.
 
@@ -24,71 +24,38 @@ requirements and verification elements coverage.
 
 
 % Summary of Summaries
-\begin{longtable}{rlcc|ccccc}
-\multirow{2}{*}{} & \multirow{2}{*}{} &
-\multirow{2}{*}{\rotatebox[origin=l]{90}{Requirements Count}} &
-\multirow{2}{*}{\rotatebox[origin=l]{90}{Verification Elements Count}} &
-\multicolumn{5}{c}{Test Results} \\ \cline{5-9}
-&&&&
-\rotatebox[origin=l]{90}{Test Cases NOT Defined} &
-\rotatebox[origin=l]{90}{ Not Executed (\ref{sec:notexec}) } &
-\rotatebox[origin=l]{90}{ Conditional Pass (\ref{sec:condpass}) } &
-\rotatebox[origin=l]{90}{ Fail (\ref{sec:fail}) } &
-\rotatebox[origin=l]{90}{ Pass (\ref{sec:pass}) }
-\\ \hline
-\multicolumn{2}{r}{\textit{Totals:} } & 694 & 1003 & &
-\multicolumn{4}{c}{ 468 } \\ \hline
-\multirow{4}{*}{
-\begin{tabular}{@{}l@{}}
-Requirements \\ \& Verification \\ Elements
-\end{tabular} } &
-not related to any TC  (\ref{sec:notcs}) &
-264 & 573 & X&  &  &  &   \\ \cline{2-9}
-& related with NOT executed TCs (\ref{sec:noexectcs}) &
-372 & 372 &  & X&  &  &   \\ \cline{2-9}
-& related with Failed TCs (\ref{sec:failedtcs}) &
-2 & 2 &  & X& X& X& X \\ \cline{2-9}
-& related with Passed TCs (\ref{sec:passedtcs}) &
-56 & 56 &  &  & X&  & X \\ \hline
-\bottomrule
-\multicolumn{5}{r}{\textit{Test Results Count:} }
- & 440
- & 5
- & 1
- & 22
-\\
+\begin{longtable}{rcc}
+&
+\begin{tabular}{@{}l@{}} Requirements \\ Counts \end{tabular} &
+\begin{tabular}{@{}l@{}} Verification \\Elements \\ Counts \end{tabular} \\ \hline
+Not related to any TC  (\ref{sec:notcs}) &
+264 & 573 \\ \hline
+Related with NOT executed TCs (\ref{sec:noexectcs}) &
+372 & 372 \\ \hline
+Related with Failed TCs (\ref{sec:failedtcs}) &
+2 & 2 \\ \hline
+Related with Passed TCs (\ref{sec:passedtcs}) &
+56 & 56 \\ \hline
+Total: & 694 & 1003 \\
 \bottomrule
 \end{longtable}
 
-
-\subsection{Progress Summary} \label{sec:prosum}
-
-The information contained in this subsection is not relevant for th requirements coverage.
-This is a complementary information useful to understand the status of the process, and the work still in progress.
-
-Please refer to the SE confluence page where the Verification Elements and Test Cases workflows are documented.
+Following table provides the Test Cases result summary.
 
 \begin{longtable}{rl}
-\multicolumn{2}{c}{\textbf{Verification Elements per Jira Status}} \\ \hline
-  Not Covered & 1003 \\ \hline
-  Descoped & 1 \\ \hline
-  Duplicated & 1 \\ \hline
+\multicolumn{2}{c}{\textbf{Test Cases Results}} \\ \hline
+  Not Executed & 440 \\ \hline
+  Conditional Pass & 5 \\ \hline
+  Fail & 1 \\ \hline
+  Pass & 22 \\ \hline
 %   ----------------------
-\bottomrule
-\end{longtable}
-
-\begin{longtable}{rl}
-\multicolumn{2}{c}{\textbf{Test Cases per Jira Status}} \\ \hline
-  Draft & 434 \\ \hline
-  Defined & 1 \\ \hline
-  Approved & 25 \\ \hline
-  Deprecated & 8 \\ \hline
-%   ----------------------
+Total: & 468 \\
 \bottomrule
 \end{longtable}
 
 
-\newpage
+
+
 \section{VCD}
 
 
@@ -10704,24 +10671,24 @@ Please refer to the SE confluence page where the Verification Elements and Test 
 The following definitions are valid for both requirements and verification elements.
 
 
-\subsubsection{ No TCs } \label{sec:notcs}
+\subsubsection{ Not related to any TC } \label{sec:notcs}
 
 The number of requirements or verification elements not related to any test case.
 
 
-\subsubsection{ No Executed TCs } \label{sec:noexectcs}
+\subsubsection{ Related with NOT executed TCs } \label{sec:noexectcs}
 
 The number of requirements or verification elements related only with not executed test cases.
 This includes test cases which status is "In Progress" or "Blocked".
 
 
-\subsubsection{ Failed TCs } \label{sec:failedtcs}
+\subsubsection{ Related with Failed TCs } \label{sec:failedtcs}
 
 The number of requirements or verification elements related with Failed test cases.
 This includes requirements or verification elements related with both Passed and Failed test cases.
 
 
-\subsubsection{ Passed TCs } \label{sec:passedtcs}
+\subsubsection{ Related with Passed TCs } \label{sec:passedtcs}
 
 The number of requirements or verification elements related with passed test cases.
 This includes requirements or verification elements related with non executed test cases.
