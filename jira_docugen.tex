@@ -20,15 +20,11 @@ requirements and verification elements coverage.
 &
 \begin{tabular}{@{}l@{}} Requirements \\ Counts \end{tabular} &
 \begin{tabular}{@{}l@{}} Verification \\Elements \\ Counts \end{tabular} \\ \hline
-Not related to any TC  (\ref{sec:notcs}) &
-264 & 573 \\ \hline
-Related with NOT executed TCs (\ref{sec:noexectcs}) &
-372 & 372 \\ \hline
-Related with Failed TCs (\ref{sec:failedtcs}) &
-2 & 2 \\ \hline
-Related with Passed TCs (\ref{sec:passedtcs}) &
-56 & 56 \\ \hline
-Total: & 694 & 1003 \\
+Not related to any TC  & 263 & 572 \\ \hline
+Related with NOT executed TCs  & 372 & 372 \\ \hline
+Related with Failed TCs  & 2 & 2 \\ \hline
+Related with Passed TCs  & 56 & 56 \\ \hline
+Total: & 693 & 1002 \\
 \bottomrule
 \end{longtable}
 
@@ -1381,14 +1377,6 @@ Total: & 468 \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
           & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0177 \\ \vcdDocRef{LSE-61}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    DMS-REQ-0177-V-01 \\ \vcdJiraRef{LVV-79}
-    \end{tabular} &
-      & & \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0178 \\ \vcdDocRef{LSE-61}
@@ -10653,68 +10641,3 @@ Total: & 468 \\
 
 
 
-\newpage
-\newpage
-\appendix
-\section{Summary Explanations}
-
-
-\subsection{Coverage Explanation}
-
-The following definitions are valid for both requirements and verification elements.
-
-
-\subsubsection{ Not related to any TC } \label{sec:notcs}
-
-The number of requirements or verification elements not related to any test case.
-
-
-\subsubsection{ Related with NOT executed TCs } \label{sec:noexectcs}
-
-The number of requirements or verification elements related only with not executed test cases.
-This includes test cases which status is "In Progress" or "Blocked".
-
-
-\subsubsection{ Related with Failed TCs } \label{sec:failedtcs}
-
-The number of requirements or verification elements related with Failed test cases.
-This includes requirements or verification elements related with both Passed and Failed test cases.
-
-
-\subsubsection{ Related with Passed TCs } \label{sec:passedtcs}
-
-The number of requirements or verification elements related with passed test cases.
-This includes requirements or verification elements related with non executed test cases.
-
-
-
-
-\subsection{Test Cases Results} \label{sec:tcresdef}
-
-These definitions are derived from the Jira ATM plugin.
-
-
-\subsubsection{ Not Executed } \label{sec:notexec}
-
-The number of test cases that have:
-
-\begin{itemize}
-\item never been executed
-\item in progress
-\item blocked
-\end{itemize}
-
-
-\subsubsection{ Conditional Pass } \label{sec:condpass}
-
-The number of test cases which result is "Conditionally Passed".
-
-
-\subsubsection{ Fail } \label{sec:fail}
-
-The number of test cases which result is "Failed".
-
-
-\subsubsection{ Pass } \label{sec:pass}
-
-The number of test cases which result is "Passed".
