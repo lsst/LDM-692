@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
 % using template at <template>.
 % Collecting data for component: "DM"
-% using docsteady version 1.1.3.post13+gc69aabd.d20190611
+% using docsteady version 1.1.3.post15+g71a5835.d20190612
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -24,97 +24,41 @@ requirements and verification elements coverage.
 
 
 % Summary of Summaries
-\begin{longtable}{rccc|cccccc}
-\multirow{2}{*}{}&
+\begin{longtable}{rlcc|ccccc}
+\multirow{2}{*}{} & \multirow{2}{*}{} &
 \multirow{2}{*}{\rotatebox[origin=l]{90}{Requirements Count}} &
 \multirow{2}{*}{\rotatebox[origin=l]{90}{Verification Elements Count}} &
-\multirow{2}{*}{\rotatebox[origin=l]{90}{Test Cases NOT Defined}} &
-\multicolumn{6}{c}{Test Results} \\ \cline{5-10}
+\multicolumn{5}{c}{Test Results} \\ \cline{5-9}
 &&&&
+\rotatebox[origin=l]{90}{Test Cases NOT Defined} &
 \rotatebox[origin=l]{90}{ Not Executed (\ref{sec:notexec}) } &
-\rotatebox[origin=l]{90}{ In Progress (\ref{sec:inprogress}) } &
-\rotatebox[origin=l]{90}{ Blocked (\ref{sec:blocked}) } &
 \rotatebox[origin=l]{90}{ Conditional Pass (\ref{sec:condpass}) } &
 \rotatebox[origin=l]{90}{ Fail (\ref{sec:fail}) } &
 \rotatebox[origin=l]{90}{ Pass (\ref{sec:pass}) }
 \\ \hline
-\textit{Totals:} & 694 & 1003 & &
-\multicolumn{6}{c}{ 468 } \\ \hline
-No TCs (\ref{sec:notcs}) &
-264 & 573 &
- X&  &  &  &  &  &   \\ \hline
-No Executed TCs (\ref{sec:noexectcs}) &
-353 & 361 &
- & X&  &  &  &  &   \\ \hline
-Partially Executed TCs (\ref{sec:partexectcs}) &
-19 & 11 &
- & X& X& X& X&  &   \\ \hline
-Failed TCs (\ref{sec:somefailedtcs}) &
-2 & 2 &
- & X& X& X& X& X& X \\ \hline
-Passed TCs (\ref{sec:somepassedtcs}) &
-56 & 56 &
- & X& X& X& X&  & X \\ \hline
-All Failed TCs (\ref{sec:allfailedtcs}) &
-56 & 0 &
- &  &  &  &  & X&   \\ \hline
-All Passed TCs (\ref{sec:allpassedtcs}) &
-0 & 0 &
- &  &  &  &  &  & X \\
+\multicolumn{2}{r}{\textit{Totals:} } & 694 & 1003 & &
+\multicolumn{4}{c}{ 468 } \\ \hline
+\multirow{4}{*}{
+\begin{tabular}{@{}l@{}}
+Requirements \\ \& Verification \\ Elements
+\end{tabular} } &
+not related to any TC  (\ref{sec:notcs}) &
+264 & 573 & X&  &  &  &   \\ \cline{2-9}
+& related with NOT executed TCs (\ref{sec:noexectcs}) &
+372 & 372 &  & X&  &  &   \\ \cline{2-9}
+& related with Failed TCs (\ref{sec:failedtcs}) &
+2 & 2 &  & X& X& X& X \\ \cline{2-9}
+& related with Passed TCs (\ref{sec:passedtcs}) &
+56 & 56 &  &  & X&  & X \\ \hline
 \bottomrule
-\multicolumn{4}{r}{\textit{Test Results Count:} }
+\multicolumn{5}{r}{\textit{Test Results Count:} }
  & 440
- & 0
- & 0
  & 5
  & 1
  & 22
 \\
 \bottomrule
 \end{longtable}
-
-
-% Requirements Summary
-\begin{longtable}{rl}
-\multicolumn{2}{c}{\textbf{Requirements Coverage}} \\ \hline
-  No TCs & 264 \\ \hline
-  No Executed TCs & 353 \\ \hline
-  Partially Executed TCs & 19 \\ \hline
-  Failed TCs & 2 \\ \hline
-  Passed TCs & 56 \\ \hline
-  All Failed TCs & 0 \\ \hline
-  All Passed TCs & 0 \\ \hline
-%   ----------------------
-\bottomrule
-\end{longtable}
-
-
-\begin{longtable}{rl}
-\multicolumn{2}{c}{\textbf{Verification Elements Coverage}} \\ \hline
-  No TCs & 573 \\ \hline
-  No Executed TCs & 361 \\ \hline
-  Partially Executed TCs & 11 \\ \hline
-  Failed TCs & 2 \\ \hline
-  Passed TCs & 56 \\ \hline
-  All Failed TCs & 0 \\ \hline
-  All Passed TCs & 0 \\ \hline
-%   ----------------------
-\bottomrule
-\end{longtable}
-
-% should not be needed anymore, summary of summary should be sufficient
-\begin{longtable}{rl}
-\multicolumn{2}{c}{\textbf{Test Cases Results}} \\ \hline
-  Not Executed & 440 \\ \hline
-  In Progress & 0 \\ \hline
-  Blocked & 0 \\ \hline
-  Conditional Pass & 5 \\ \hline
-  Fail & 1 \\ \hline
-  Pass & 22 \\ \hline
-%   ----------------------
-\bottomrule
-\end{longtable}
-
 
 
 \subsection{Progress Summary} \label{sec:prosum}
@@ -10768,39 +10712,21 @@ The number of requirements or verification elements not related to any test case
 \subsubsection{ No Executed TCs } \label{sec:noexectcs}
 
 The number of requirements or verification elements related only with not executed test cases.
+This includes test cases which status is "In Progress" or "Blocked".
 
 
-\subsubsection{ Partially Executed TCs } \label{sec:partexectcs}
+\subsubsection{ Failed TCs } \label{sec:failedtcs}
 
-The number of requirements or verification elements related to test cases that fall in one of the following results:
-
-\begin{itemize}
-\item Conditionally Passed
-\item In Progress
-\item Blocked
-\end{itemize}
+The number of requirements or verification elements related with Failed test cases.
+This includes requirements or verification elements related with both Passed and Failed test cases.
 
 
-\subsubsection{ Failed TCs } \label{sec:somefailedtcs}
+\subsubsection{ Passed TCs } \label{sec:passedtcs}
 
-The number of requirements or verification elements related to one or more failed test cases.
-Other related test cases are in any different status.
-
-
-\subsubsection{ Passed TCs } \label{sec:somepassedtcs}
-
-The number of requirements or verification elements related to one or more passed test cases.
-Other related test cases are in any different status but not failed.
+The number of requirements or verification elements related with passed test cases.
+This includes requirements or verification elements related with non executed test cases.
 
 
-\subsubsection{ All Failed TCs } \label{sec:allfailedtcs}
-
-The number of requirements related to only failed test cases.
-
-
-\subsubsection{ All Passed TCs } \label{sec:allpassedtcs}
-
-The number of requirements related to only passed test cases.
 
 
 \subsection{Test Cases Results} \label{sec:tcresdef}
@@ -10810,29 +10736,25 @@ These definitions are derived from the Jira ATM plugin.
 
 \subsubsection{ Not Executed } \label{sec:notexec}
 
-The number of test cases that have never been executed.
+The number of test cases that have:
 
-
-\subsubsection{ In Progress } \label{sec:inprogress}
-
-The number of test cases which are currently in execution.
-
-
-\subsubsection{ Blocked } \label{sec:blocked}
-
-The number of test cases which are currently blocked, and their execution cannot be completed.
+\begin{itemize}
+\item never been executed
+\item in progress
+\item blocked
+\end{itemize}
 
 
 \subsubsection{ Conditional Pass } \label{sec:condpass}
 
-The number of test cases which have been marked as \textbf{Conditional Passed} in the last execution.
+The number of test cases which result is "Conditionally Passed".
 
 
 \subsubsection{ Fail } \label{sec:fail}
 
-The number of test cases which have been marked as \textbf{Fail} in the last execution.
+The number of test cases which result is "Failed".
 
 
 \subsubsection{ Pass } \label{sec:pass}
 
-The number of test cases which have been marked as \textbf{Pass} in the last execution.
+The number of test cases which result is "Passed".
