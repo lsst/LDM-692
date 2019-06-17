@@ -31,7 +31,7 @@ meta.tex: Makefile .FORCE
 
 aglossary.tex : ${TEX} myacronyms.txt skipacronyms.txt
 	echo ${TEXMFHOME}
-	python3 ${TEXMFHOME}/../bin/generateAcronyms.py -g   $(TEX)
+	python3 ${TEXMFHOME}/../bin/generateAcronyms.py -t "DM" -g   $(TEX)
 
 myacronyms.txt :
 	touch myacronyms.txt
