@@ -15,10 +15,10 @@ ifneq "$(GITSTATUS)" ""
 endif
 #Traditional acronyms are better in this document
 #$(DOCNAME).pdf: $(DOCNAME).tex meta.tex aglossary.tex
-$(DOCNAME).pdf: $(DOCNAME).tex meta.tex acronyms.tex
+$(DOCNAME).pdf: $(DOCNAME).tex meta.tex acronyms.tex aglossary.tex
 	latexmk -bibtex -xelatex -f $(DOCNAME).tex
-	%makeglossaries $(DOCNAME)
-	%xelatex $(DOCNAME).tex
+	makeglossaries $(DOCNAME)
+	xelatex $(DOCNAME).tex
 .FORCE:
 
 meta.tex: Makefile .FORCE
@@ -35,9 +35,9 @@ acronyms.tex : ${TEX} myacronyms.txt skipacronyms.txt
 	echo ${TEXMFHOME}
 	python3 ${TEXMFHOME}/../bin/generateAcronyms.py -t "DM"    $(TEX)
 
-#aglossary.tex : ${TEX} myacronyms.txt skipacronyms.txt
-#	echo ${TEXMFHOME}
-#	python3 ${TEXMFHOME}/../bin/generateAcronyms.py -t "DM" -g   $(TEX)
+aglossary.tex : ${TEX} myacronyms.txt skipacronyms.txt
+	echo ${TEXMFHOME}
+	python3 ${TEXMFHOME}/../bin/generateAcronyms.py -t "DM" -g   $(TEX)
 
 myacronyms.txt :
 	touch myacronyms.txt
