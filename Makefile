@@ -44,3 +44,8 @@ myacronyms.txt :
 
 skipacronyms.txt :
 	touch skipacronyms.txt
+
+clean :
+	latexmk -c
+	rm *.pdf
+	rm -rf $(VENVDIR)
