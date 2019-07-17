@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /Users/GComoretto/anaconda3/envs/docsteady/lib/python3.7/site-packages/docsteady/templates/vcd.latex.jinja2.
+% using template at <template>.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc3
+% using docsteady version 1.2rc2.post31+g43548d6.d20190717
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -11,34 +11,32 @@
 
 \section{Summary Information}\label{sec:summary}
 
-The following table gives a summary overview including the relation between test cases results and
-coverage of requirements and verification elements coverage.
-
+The following table provides an overview of the relationships between requirements, verification elements, and number of tests cases
 
 % Summary of Summaries
 \begin{longtable}{rcc}
 &
-\begin{tabular}{@{}l@{}} Requirements \\ Counts \end{tabular} &
-\begin{tabular}{@{}l@{}} Verification \\Elements \\ Counts \end{tabular} \\ \hline
-Not related to any Test Case  & 261 & 567 \\ \hline
-Related to NOT executed Test Cases  & 362 & 365 \\ \hline
+\begin{tabular}{@{}l@{}} Count of \\ Requirements \end{tabular} &
+\begin{tabular}{@{}l@{}} Count of \\ Verification \\Elements \end{tabular} \\ \hline
+Not related to any Test Case  & 260 & 535 \\ \hline
+Related to NOT executed Test Cases  & 363 & 397 \\ \hline
 Related to Failed Test Cases  & 2 & 2 \\ \hline
 Related to Passed Test Cases  & 68 & 68 \\ \hline
-Total: & 693 & 1002 \\
+Total & 693 & 1002 \\
 \bottomrule
 \end{longtable}
 
 
 The following table provides the Test Cases result summary.
 
-\begin{longtable}{rl}
+\begin{longtable}{rr}
 \multicolumn{2}{c}{\textbf{Test Cases Results}} \\ \hline
-  Not Executed & 441 \\ \hline
+  Not Executed & 447 \\ \hline
   Conditional Pass & 7 \\ \hline
   Fail & 1 \\ \hline
   Pass & 28 \\ \hline
 %   ----------------------
-Total: & 477 \\
+Total & 483 \\
 \bottomrule
 \end{longtable}
 
@@ -46,7 +44,7 @@ Note that test cases may be related to multiple requirements or verification ele
 and requirements or verification elements may be related to multiple test cases.
 
 \newpage
-\section{VCD} \label{sec:vcd}
+\section{Verification Control} \label{sec:vcd}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -372,7 +370,11 @@ and requirements or verification elements may be related to multiple test cases.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0030-v-02}{DMS-REQ-0030-V-02}\\ \vcdJiraRef{LVV-9741}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1240}{LVV-T1240} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0032 \\ \vcdDocRef{LSE-61}
@@ -898,6 +900,13 @@ and requirements or verification elements may be related to multiple test cases.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1232}{LVV-T1232} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0089 \\ \vcdDocRef{LSE-61}
@@ -1213,7 +1222,7 @@ and requirements or verification elements may be related to multiple test cases.
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T135}{LVV-T135} \\
-        \vcdDocRef{LDM-639}
+        \vcdDocRef{}
         \end{tabular} &
           & \notexec{} \\
   \midrule
@@ -1237,7 +1246,7 @@ and requirements or verification elements may be related to multiple test cases.
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T139}{LVV-T139} \\
-        \vcdDocRef{LDM-639}
+        \vcdDocRef{}
         \end{tabular} &
           & \notexec{} \\
   \midrule
@@ -1273,7 +1282,7 @@ and requirements or verification elements may be related to multiple test cases.
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T143}{LVV-T143} \\
-        \vcdDocRef{LDM-639}
+        \vcdDocRef{}
         \end{tabular} &
           & \notexec{} \\
   \midrule
@@ -2052,7 +2061,7 @@ and requirements or verification elements may be related to multiple test cases.
     \end{tabular} &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T70}{LVV-T70} \\
-        \vcdDocRef{LDM-639}
+        \vcdDocRef{}
         \end{tabular} &
           & \notexec{} \\
   \midrule
@@ -3354,7 +3363,11 @@ and requirements or verification elements may be related to multiple test cases.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0343-v-02}{DMS-REQ-0343-V-02}\\ \vcdJiraRef{LVV-9748}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1252}{LVV-T1252} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0345 \\ \vcdDocRef{LSE-61}
@@ -4013,13 +4026,21 @@ and requirements or verification elements may be related to multiple test cases.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0358-v-01}{DMS-REQ-0358-V-01}\\ \vcdJiraRef{LVV-3400}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1250}{LVV-T1250} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0358-v-02}{DMS-REQ-0358-V-02}\\ \vcdJiraRef{LVV-9788}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1251}{LVV-T1251} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0359 \\ \vcdDocRef{LSE-61}
@@ -4044,102 +4065,173 @@ and requirements or verification elements may be related to multiple test cases.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1257}{LVV-T1257} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-02}{DMS-REQ-0359-V-02}\\ \vcdJiraRef{LVV-9751}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-03}{DMS-REQ-0359-V-03}\\ \vcdJiraRef{LVV-9752}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-04}{DMS-REQ-0359-V-04}\\ \vcdJiraRef{LVV-9753}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-05}{DMS-REQ-0359-V-05}\\ \vcdJiraRef{LVV-9754}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-06}{DMS-REQ-0359-V-06}\\ \vcdJiraRef{LVV-9755}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-07}{DMS-REQ-0359-V-07}\\ \vcdJiraRef{LVV-9756}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-08}{DMS-REQ-0359-V-08}\\ \vcdJiraRef{LVV-9757}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-09}{DMS-REQ-0359-V-09}\\ \vcdJiraRef{LVV-9758}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-10}{DMS-REQ-0359-V-10}\\ \vcdJiraRef{LVV-9759}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-11}{DMS-REQ-0359-V-11}\\ \vcdJiraRef{LVV-9760}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-12}{DMS-REQ-0359-V-12}\\ \vcdJiraRef{LVV-9761}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-13}{DMS-REQ-0359-V-13}\\ \vcdJiraRef{LVV-9762}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-14}{DMS-REQ-0359-V-14}\\ \vcdJiraRef{LVV-9763}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-15}{DMS-REQ-0359-V-15}\\ \vcdJiraRef{LVV-9764}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-16}{DMS-REQ-0359-V-16}\\ \vcdJiraRef{LVV-9765}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0359-v-17}{DMS-REQ-0359-V-17}\\ \vcdJiraRef{LVV-9766}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0360 \\ \vcdDocRef{LSE-61}
@@ -4169,73 +4261,121 @@ and requirements or verification elements may be related to multiple test cases.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-02}{DMS-REQ-0360-V-02}\\ \vcdJiraRef{LVV-9767}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-03}{DMS-REQ-0360-V-03}\\ \vcdJiraRef{LVV-9768}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-04}{DMS-REQ-0360-V-04}\\ \vcdJiraRef{LVV-9769}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-05}{DMS-REQ-0360-V-05}\\ \vcdJiraRef{LVV-9770}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-06}{DMS-REQ-0360-V-06}\\ \vcdJiraRef{LVV-9771}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-07}{DMS-REQ-0360-V-07}\\ \vcdJiraRef{LVV-9773}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-08}{DMS-REQ-0360-V-08}\\ \vcdJiraRef{LVV-9774}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-09}{DMS-REQ-0360-V-09}\\ \vcdJiraRef{LVV-9775}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-10}{DMS-REQ-0360-V-10}\\ \vcdJiraRef{LVV-9776}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-11}{DMS-REQ-0360-V-11}\\ \vcdJiraRef{LVV-9777}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-12}{DMS-REQ-0360-V-12}\\ \vcdJiraRef{LVV-9778}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0360-v-13}{DMS-REQ-0360-V-13}\\ \vcdJiraRef{LVV-9779}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0361 \\ \vcdDocRef{LSE-61}
