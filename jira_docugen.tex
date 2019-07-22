@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at <template>.
+% using template at /Users/GComoretto/.local/lib/python3.7/site-packages/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc2.post31+g43548d6.d20190717
+% using docsteady version 1.2rc3
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -11,32 +11,34 @@
 
 \section{Summary Information}\label{sec:summary}
 
-The following table provides an overview of the relationships between requirements, verification elements, and number of tests cases
+The following table gives a summary overview including the relation between test cases results and
+coverage of requirements and verification elements coverage.
+
 
 % Summary of Summaries
 \begin{longtable}{rcc}
 &
-\begin{tabular}{@{}l@{}} Count of \\ Requirements \end{tabular} &
-\begin{tabular}{@{}l@{}} Count of \\ Verification \\Elements \end{tabular} \\ \hline
-Not related to any Test Case  & 260 & 535 \\ \hline
-Related to NOT executed Test Cases  & 363 & 397 \\ \hline
+\begin{tabular}{@{}l@{}} Requirements \\ Counts \end{tabular} &
+\begin{tabular}{@{}l@{}} Verification \\Elements \\ Counts \end{tabular} \\ \hline
+Not related to any Test Case  & 259 & 534 \\ \hline
+Related to NOT executed Test Cases  & 364 & 398 \\ \hline
 Related to Failed Test Cases  & 2 & 2 \\ \hline
 Related to Passed Test Cases  & 68 & 68 \\ \hline
-Total & 693 & 1002 \\
+Total: & 693 & 1002 \\
 \bottomrule
 \end{longtable}
 
 
 The following table provides the Test Cases result summary.
 
-\begin{longtable}{rr}
+\begin{longtable}{rl}
 \multicolumn{2}{c}{\textbf{Test Cases Results}} \\ \hline
-  Not Executed & 447 \\ \hline
+  Not Executed & 448 \\ \hline
   Conditional Pass & 7 \\ \hline
   Fail & 1 \\ \hline
   Pass & 28 \\ \hline
 %   ----------------------
-Total & 483 \\
+Total: & 484 \\
 \bottomrule
 \end{longtable}
 
@@ -44,7 +46,7 @@ Note that test cases may be related to multiple requirements or verification ele
 and requirements or verification elements may be related to multiple test cases.
 
 \newpage
-\section{Verification Control} \label{sec:vcd}
+\section{VCD} \label{sec:vcd}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -7988,7 +7990,11 @@ and requirements or verification elements may be related to multiple test cases.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0372-v-01}{DMS-REQ-0372-V-01}\\ \vcdJiraRef{LVV-9637}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1264}{LVV-T1264} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0344 \\ \vcdDocRef{LSE-61}
