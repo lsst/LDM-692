@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
 % using template at <template>.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc8.post10+g9af92fd
+% using docsteady version 1.2rc9
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -19,10 +19,10 @@ The following table provides an overview of the relationships between requiremen
 \begin{tabular}{@{}l@{}} Count of \\ LSE-61 1a \\ Requirements \end{tabular} &
 \begin{tabular}{@{}l@{}} Count of ALL \\ Requirements \end{tabular} &
 \begin{tabular}{@{}l@{}} Count of \\ Verification \\Elements \end{tabular} \\ \hline
-Not related to any Test Case  & 0 & 271 & 536 \\ \hline
-Related to NOT executed Test Cases  & 29 & 377 & 415 \\ \hline
-Related to Failed Test Cases  & 0 & 2 & 2 \\ \hline
-Related to Passed Test Cases  & 24 & 66 & 66 \\ \hline
+Not related to any Test Case  & 0 & 271 & 535 \\ \hline
+Related to NOT executed Test Cases  & 26 & 373 & 397 \\ \hline
+Related to Failed Test Cases  & 1 & 3 & 4 \\ \hline
+Related to Passed Test Cases  & 26 & 69 & 83 \\ \hline
 Total & 53 & 716 & 1019 \\
 \bottomrule
 \end{longtable}
@@ -34,10 +34,10 @@ The following table provides the Test Cases result summary.
 \multicolumn{2}{c}{\textbf{Test Cases Results}} \\ \hline
   Not Executed & 462 \\ \hline
   Conditional Pass & 0 \\ \hline
-  Fail & 1 \\ \hline
-  Pass & 31 \\ \hline
+  Fail & 2 \\ \hline
+  Pass & 45 \\ \hline
 %   ----------------------
-Total & 494 \\
+Total & 509 \\
 \bottomrule
 \end{longtable}
 
@@ -394,7 +394,7 @@ and requirements or verification elements may be related to multiple test cases.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-01-28 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
@@ -409,11 +409,11 @@ and requirements or verification elements may be related to multiple test cases.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-01-28 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0032 \\ \vcdDocRef{LSE-61}
@@ -826,7 +826,7 @@ and requirements or verification elements may be related to multiple test cases.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-01-23 \\
+          2020-02-04 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
@@ -2447,11 +2447,11 @@ and requirements or verification elements may be related to multiple test cases.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -3555,7 +3555,7 @@ and requirements or verification elements may be related to multiple test cases.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-01-29 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
@@ -4135,12 +4135,14 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1756}{LVV-T1756} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4150,12 +4152,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4165,12 +4162,31 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1758}{LVV-T1758} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-07 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \failed \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1759}{LVV-T1759} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-02-07 \\
+            \vcdDocRef{DMTR-201}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          \end{tabular} &
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4180,12 +4196,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4195,12 +4206,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1759}{LVV-T1759} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-07 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4210,12 +4228,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4225,12 +4238,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4240,12 +4248,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4255,12 +4258,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1758}{LVV-T1758} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-07 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \failed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4270,12 +4280,14 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1757}{LVV-T1757} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4285,12 +4297,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4300,12 +4307,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4315,12 +4317,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4330,12 +4327,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4345,12 +4337,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4360,12 +4347,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4375,12 +4357,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T377}{LVV-T377} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4407,15 +4384,15 @@ and requirements or verification elements may be related to multiple test cases.
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1745}{LVV-T1745} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4425,12 +4402,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1746}{LVV-T1746} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4440,12 +4424,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1747}{LVV-T1747} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4455,12 +4446,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1748}{LVV-T1748} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4470,12 +4468,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1749}{LVV-T1749} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4485,12 +4490,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1750}{LVV-T1750} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4500,12 +4512,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1746}{LVV-T1746} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4515,12 +4534,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1751}{LVV-T1751} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4530,12 +4556,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4545,12 +4566,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1749}{LVV-T1749} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4560,12 +4588,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1750}{LVV-T1750} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4575,12 +4610,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1753}{LVV-T1753} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4590,12 +4632,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T378}{LVV-T378} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1752}{LVV-T1752} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0361 \\ \vcdDocRef{LSE-61}
@@ -4648,12 +4697,19 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T376}{LVV-T376} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1754}{LVV-T1754} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          None \\
+          2020-02-06 \\
             \vcdDocRef{DMTR-201}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4663,12 +4719,7 @@ and requirements or verification elements may be related to multiple test cases.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T376}{LVV-T376} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          None \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -4680,7 +4731,16 @@ and requirements or verification elements may be related to multiple test cases.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0362-v-04}{DMS-REQ-0362-V-04}\\ \vcdJiraRef{LVV-9782}
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1755}{LVV-T1755} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-02-07 \\
+            \vcdDocRef{DMTR-201}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          \end{tabular} &
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
