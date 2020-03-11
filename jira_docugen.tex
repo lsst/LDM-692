@@ -1,11 +1,7 @@
-
-
-
-
 % generated from JIRA project LVV
-% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post5+ged1c2b8.d20200310-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
+% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post6+g9baab5d.d20200311-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc10.post5+ged1c2b8.d20200310
+% using docsteady version 1.2rc10.post6+g9baab5d.d20200311
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -18,30 +14,52 @@
 The following table provides an overview of the relationships between requirements, verification elements, and test results.
 
 % Summary of Summaries
-\begin{longtable}{rrrr}
-&
-\begin{tabular}{@{}l@{}} Count of \\ LSE-61 1a \\ Requirements \end{tabular} &
-\begin{tabular}{@{}l@{}} Count of ALL \\ Requirements \end{tabular} &
-\begin{tabular}{@{}l@{}} Count of \\ Verification \\Elements \end{tabular} \\ \hline
-Not related to any Test Case  & 0 & 261 & 515 \\ \hline
-Related to NOT executed Test Cases  & 26 & 334 & 357 \\ \hline
-Related to Failed Test Cases  & 1 & 3 & 4 \\ \hline
-Related to Passed Test Cases  & 26 & 107 & 122 \\ \hline
-Total & 53 & 705 & 998 \\
-\bottomrule
+\begin{longtable}{p{2cm}p{2cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+ &
+ & \rotatebox[origin=l]{60}{ \textbf{ Fully Verified } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Partially Verified } }
+ & \rotatebox[origin=l]{60}{ \textbf{ With Failed TCs } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Not Verified } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Not Cov. by TCs } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Total } }
+\\ \hline
+\multicolumn{2}{p{4cm}}{\textbf{Verif. Elements}}
+ & 14
+ & 108
+ & 4
+ & 357
+ & 515
+ & 998
+\\ \hline
+\multicolumn{2}{p{4cm}}{\textbf{All Requirements}}
+ & 10
+ & 100
+ & 3
+ & 331
+ & 261
+ & 705
+\\ \hline
+
 \end{longtable}
+
 
 
 The following table provides the Test Cases result summary.
 
-\begin{longtable}{rr}
-\multicolumn{2}{c}{\textbf{Test Cases Results}} \\ \hline
-  Not Executed & 448 \\ \hline
-  Conditional Pass & 13 \\ \hline
-  Fail & 2 \\ \hline
-  Pass & 45 \\ \hline
+\begin{longtable}{rp{2cm}p{2cm}p{2cm}p{2cm}}
+& \textbf{ Passed }
+& \textbf{ P. w/Dev. }
+& \textbf{ Failed }
+& \textbf{ Not Ex. }
+\\ \hline
+Test Cases Results
+& 45
+& 13
+& 2
+& 448
+\\ \hline
 %   ----------------------
-Total & 508 \\
+Total & \multicolumn{4}{l}{\textbf{ 508 } }\\
 \bottomrule
 \end{longtable}
 
