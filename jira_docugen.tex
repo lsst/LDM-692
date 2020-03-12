@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post6+g9baab5d.d20200311-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
+% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post7+gae1ed23.d20200312-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc10.post6+g9baab5d.d20200311
+% using docsteady version 1.2rc10.post7+gae1ed23.d20200312
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -14,57 +14,118 @@
 The following table provides an overview of the relationships between requirements, verification elements, and test results.
 
 % Summary of Summaries
-\begin{longtable}{p{2cm}p{2cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
- &
- & \rotatebox[origin=l]{60}{ \textbf{ Fully Verified } }
- & \rotatebox[origin=l]{60}{ \textbf{ Partially Verified } }
- & \rotatebox[origin=l]{60}{ \textbf{ With Failed TCs } }
- & \rotatebox[origin=l]{60}{ \textbf{ Not Verified } }
- & \rotatebox[origin=l]{60}{ \textbf{ Not Cov. by TCs } }
+\begin{longtable}{rp{2cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+ & \rotatebox[origin=l]{60}{ \textbf{Priority}  }
+ & \rotatebox[origin=l]{60}{ \textbf{ Fully Verified } {\scriptsize \ref{sec:fullyverified} } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Partially Verified } {\scriptsize \ref{sec:partiallyverified} } }
+ & \rotatebox[origin=l]{60}{ \textbf{ With Failures } {\scriptsize \ref{sec:withfaulres} } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Not Verified } {\scriptsize \ref{sec:notverified} } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Not Covered } {\scriptsize \ref{sec:notcovered} } }
  & \rotatebox[origin=l]{60}{ \textbf{ Total } }
-\\ \hline
-\multicolumn{2}{p{4cm}}{\textbf{Verif. Elements}}
+\\ \toprule
+\textbf{ DM Verification E.} & (All)
  & 14
  & 108
  & 4
  & 357
  & 515
- & 998
+ & \textbf{ 998 }
 \\ \hline
-\multicolumn{2}{p{4cm}}{\textbf{All Requirements}}
+\textbf{ DM Requirements} & (All)
  & 10
  & 100
  & 3
  & 331
  & 261
- & 705
-\\ \hline
-
+ & \textbf{ 705 }
+\\ \toprule
+\citeds{LSE-61} & 1a & 1 & 25 & 1 & 26 &  & \textbf{ 53 }
+ \\ \cdashline{2-8}
+ & 1b & 7 & 23 & 2 & 74 & 4 & \textbf{ 110 }
+ \\ \cdashline{2-8}
+ & 2 &  & 4 &  & 39 & 7 & \textbf{ 50 }
+ \\ \cdashline{2-8}
+ & 3 &  & 1 &  & 5 &  & \textbf{ 6 }
+ \\ \cdashline{2-8}
+ & Not Set &  &  &  &  & 2 & \textbf{ 2 }
+ \\ \cdashline{2-8}
+ & (All)  & 8 & 53 & 3 & 144 & 13 & \textbf{ 221 }
+ \\ \hline
+\citeds{LSE-68} & Not Set &  &  &  &  & 19 & \textbf{ 19 }
+ \\ \hline
+\citeds{LSE-69} & Not Set &  &  &  &  & 14 & \textbf{ 14 }
+ \\ \hline
+\citeds{LSE-72} & Not Set &  &  &  &  & 52 & \textbf{ 52 }
+ \\ \hline
+\citeds{LSE-75} & Not Set &  &  &  &  & 9 & \textbf{ 9 }
+ \\ \hline
+\citeds{LSE-130} & Not Set &  &  &  &  & 31 & \textbf{ 31 }
+ \\ \hline
+\citeds{LSE-131} & Not Set &  &  &  &  & 13 & \textbf{ 13 }
+ \\ \hline
+\citeds{LSE-140} & Not Set &  &  &  &  & 23 & \textbf{ 23 }
+ \\ \hline
+\citeds{LSE-70} & Not Set &  &  &  &  & 26 & \textbf{ 26 }
+ \\ \hline
+\citeds{LSE-209} & Not Set &  &  &  &  & 46 & \textbf{ 46 }
+ \\ \hline
+\citeds{LDM-554} & Not Set & 2 & 47 &  & 187 &  & \textbf{ 236 }
+ \\ \hline
+\citeds{LSE-400} & Not Set &  &  &  &  & 15 & \textbf{ 15 }
+ \\ \hline
 \end{longtable}
 
 
 
 The following table provides the Test Cases result summary.
 
-\begin{longtable}{rp{2cm}p{2cm}p{2cm}p{2cm}}
-& \textbf{ Passed }
-& \textbf{ P. w/Dev. }
-& \textbf{ Failed }
-& \textbf{ Not Ex. }
-\\ \hline
+\begin{longtable}{rp{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+& \rotatebox[origin=l]{60}{ \textbf{ Passed } }
+& \rotatebox[origin=l]{60}{ \textbf{ P. w/Dev. } }
+& \rotatebox[origin=l]{60}{ \textbf{ Failed } }
+& \rotatebox[origin=l]{60}{ \textbf{ Not Ex. } }
+& \rotatebox[origin=l]{60}{ \textbf{Total}}
+\\ \toprule
 Test Cases Results
 & 45
 & 13
 & 2
 & 448
-\\ \hline
-%   ----------------------
-Total & \multicolumn{4}{l}{\textbf{ 508 } }\\
+ & \textbf{ 508 } \\
 \bottomrule
 \end{longtable}
 
 Note that test cases may be related to multiple requirements or verification elements,
 and requirements or verification elements may be related to multiple test cases.
+
+
+\subsection{Fully Verified}\label{sec:fullyverified}
+
+These are the Verification Elements and Requirements, in which all related Test Cases have been successfully executed.
+The last execution status for all test cases shall be \textbf{Passed} or \textbf{Passed w/Deviation}.
+
+
+\subsection{Partially Verified}\label{sec:partiallyverified}
+
+These are the Verification Elements and Requirements, in which some of the related Test Cases have been successfully executed.
+The last execution status of the test cases shall be \textbf{Not Executed}, \textbf{Passed} or \textbf{Passed w/Deviation}.
+
+
+\subsection{With Failures}\label{sec:withfaulres}
+
+These are the Verification Elements and Requirements, in which at least one of the related Test Cases
+has a \textbf{Failure} as execution result.
+
+
+\subsection{Not Verified}\label{sec:notverified}
+
+These are the Verification Elements and Requirements, in which all related Test Cases have not been executed.
+
+
+\subsection{Not Covered}\label{sec:notcovered}
+
+These are the Verification Elements and Requirements which are not related to any Test Cases.
+
 
 \newpage
 \section{Verification Control} \label{sec:vcd}
