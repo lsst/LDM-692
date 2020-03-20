@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post7+gae1ed23.d20200312-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
+% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post15+g77406d5.d20200320-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc10.post7+gae1ed23.d20200312
+% using docsteady version 1.2rc10.post15+g77406d5.d20200320
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -11,7 +11,7 @@
 
 \section{Summary Information}\label{sec:summary}
 
-The following table provides an overview of the relationships between requirements, verification elements, and test results.
+The following table provides an overview of the requirements and verification elements coverage.
 
 % Summary of Summaries
 \begin{longtable}{rp{2cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
@@ -23,14 +23,6 @@ The following table provides an overview of the relationships between requiremen
  & \rotatebox[origin=l]{60}{ \textbf{ Not Covered } {\scriptsize \ref{sec:notcovered} } }
  & \rotatebox[origin=l]{60}{ \textbf{ Total } }
 \\ \toprule
-\textbf{ DM Verification E.} & (All)
- & 14
- & 108
- & 4
- & 357
- & 515
- & \textbf{ 998 }
-\\ \hline
 \textbf{ DM Requirements} & (All)
  & 10
  & 100
@@ -73,6 +65,14 @@ The following table provides an overview of the relationships between requiremen
  \\ \hline
 \citeds{LSE-400} & Not Set &  &  &  &  & 15 & \textbf{ 15 }
  \\ \hline
+\textbf{ DM Verification E.} & (All)
+ & 14
+ & 108
+ & 4
+ & 357
+ & 515
+ & \textbf{ 998 }
+\\ \hline
 \end{longtable}
 
 
@@ -80,10 +80,10 @@ The following table provides an overview of the relationships between requiremen
 The following table provides the Test Cases result summary.
 
 \begin{longtable}{rp{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
-& \rotatebox[origin=l]{60}{ \textbf{ Passed } }
-& \rotatebox[origin=l]{60}{ \textbf{ P. w/Dev. } }
-& \rotatebox[origin=l]{60}{ \textbf{ Failed } }
-& \rotatebox[origin=l]{60}{ \textbf{ Not Ex. } }
+& \rotatebox[origin=l]{60}{ \textbf{ Passed }{\scriptsize \ref{sec:pass} } }
+& \rotatebox[origin=l]{60}{ \textbf{ P. w/Dev. }{\scriptsize \ref{sec:condpass} } }
+& \rotatebox[origin=l]{60}{ \textbf{ Failed }{\scriptsize \ref{sec:fail} } }
+& \rotatebox[origin=l]{60}{ \textbf{ Not Ex. }{\scriptsize \ref{sec:notexec} } }
 & \rotatebox[origin=l]{60}{ \textbf{Total}}
 \\ \toprule
 Test Cases Results
@@ -99,42 +99,73 @@ Note that test cases may be related to multiple requirements or verification ele
 and requirements or verification elements may be related to multiple test cases.
 
 
-\subsection{Fully Verified}\label{sec:fullyverified}
+\subsection{Coverage Description}
+
+\subsubsection{Fully Verified}\label{sec:fullyverified}
 
 These are the Verification Elements and Requirements, in which all related Test Cases have been successfully executed.
 The last execution status for all test cases shall be \textbf{Passed} or \textbf{Passed w/Deviation}.
 
 
-\subsection{Partially Verified}\label{sec:partiallyverified}
+\subsubsection{Partially Verified}\label{sec:partiallyverified}
 
 These are the Verification Elements and Requirements, in which some of the related Test Cases have been successfully executed.
 The last execution status of the test cases shall be \textbf{Not Executed}, \textbf{Passed} or \textbf{Passed w/Deviation}.
 
 
-\subsection{With Failures}\label{sec:withfaulres}
+\subsubsection{With Failures}\label{sec:withfaulres}
 
 These are the Verification Elements and Requirements, in which at least one of the related Test Cases
 has a \textbf{Failure} as execution result.
 
 
-\subsection{Not Verified}\label{sec:notverified}
+\subsubsection{Not Verified}\label{sec:notverified}
 
 These are the Verification Elements and Requirements, in which all related Test Cases have not been executed.
 
 
-\subsection{Not Covered}\label{sec:notcovered}
+\subsubsection{Not Covered}\label{sec:notcovered}
 
 These are the Verification Elements and Requirements which are not related to any Test Cases.
+
+
+\subsection{Test Executions Description}
+
+
+\subsubsection{Passed}\label{sec:pass}
+
+Test cases that have been executed without any problems.
+Issues may have been found during the execution, and linked to the test case, but they are not
+affecting the verification process.
+
+
+\subsubsection{Passed with Deviation}\label{sec:condpass}
+
+Test cases which execution can be considered successful, but a deviation to the requirement is needed.
+The deviation shall be recorded in a Jira issue, type \textit{Deviation} and linked to the test.
+
+
+\subsubsection{Failed}\label{sec:fail}
+
+The test case execution failed. One or more Jira issues shall be filed and related with the test.
+
+
+\subsubsection{Not Executed}\label{sec:notexec}
+
+The test case has not been executed yet.
 
 
 \newpage
 \section{Verification Control} \label{sec:vcd}
 
+
+\subsection{LSE-61 Requirements Coverage}
+
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
 {\small
 \begin{longtable}{lllll}
-\caption{ DM VCD Table.} \\
+\caption{ DM LSE-61 Requirements.} \\
 \toprule
 \textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
 \toprule
@@ -290,7 +321,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-182}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0020\\\vcdDocRef{LSE-61}~{\tiny (p. 1a)}
@@ -341,7 +377,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-182}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0024\\\vcdDocRef{LSE-61}~{\tiny (p. 1a)}
@@ -399,7 +440,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-182}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0029\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
@@ -825,7 +871,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-182}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0069\\\vcdDocRef{LSE-61}~{\tiny (p. 1a)}
@@ -3116,7 +3167,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-182}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0316\\\vcdDocRef{LSE-61}~{\tiny (p. 1a)}
@@ -3894,7 +3950,7 @@ These are the Verification Elements and Requirements which are not related to an
       &
     \begin{tabular}{@{}l@{}}
     \hypertarget{dms-req-0352-v-02}{DMS-REQ-0352-V-02}
-    \\\vcdJiraRef{LVV-18491}~{\tiny (p. Undefined)}
+    \\\vcdJiraRef{LVV-18491}~{\tiny (p. 2)}
     \end{tabular} &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T181}{LVV-T181} \\
@@ -5081,6 +5137,252 @@ These are the Verification Elements and Requirements which are not related to an
         & & \\
   \midrule
   \begin{tabular}{@{}l@{}}
+  DMS-REQ-0372\\\vcdDocRef{LSE-61}~{\tiny (p. 1a)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0372-v-01}{DMS-REQ-0372-V-01}
+    \\\vcdJiraRef{LVV-9637}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1264}{LVV-T1264} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0344\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0344-v-02}{DMS-REQ-0344-V-02}
+    \\\vcdJiraRef{LVV-9744}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0344-v-01}{DMS-REQ-0344-V-01}
+    \\\vcdJiraRef{LVV-18229}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0384\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0384-v-01}{DMS-REQ-0384-V-01}
+    \\\vcdJiraRef{LVV-18222}~{\tiny (p. 1b)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1524}{LVV-T1524} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0381\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0381-v-01}{DMS-REQ-0381-V-01}
+    \\\vcdJiraRef{LVV-18223}~{\tiny (p. 2)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1525}{LVV-T1525} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0380\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0380-v-01}{DMS-REQ-0380-V-01}
+    \\\vcdJiraRef{LVV-18224}~{\tiny (p. 1b)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1526}{LVV-T1526} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0382\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0382-v-01}{DMS-REQ-0382-V-01}
+    \\\vcdJiraRef{LVV-18225}~{\tiny (p. 1b)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1527}{LVV-T1527} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0385\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0385-v-01}{DMS-REQ-0385-V-01}
+    \\\vcdJiraRef{LVV-18226}~{\tiny (p. 1b)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1528}{LVV-T1528} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0379\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0379-v-01}{DMS-REQ-0379-V-01}
+    \\\vcdJiraRef{LVV-18227}~{\tiny (p. 1b)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1529}{LVV-T1529} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0383\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0383-v-01}{DMS-REQ-0383-V-01}
+    \\\vcdJiraRef{LVV-18228}~{\tiny (p. 1b)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1530}{LVV-T1530} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0386\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0386-v-01}{DMS-REQ-0386-V-01}
+    \\\vcdJiraRef{LVV-18230}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1560}{LVV-T1560} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0387\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0387-v-01}{DMS-REQ-0387-V-01}
+    \\\vcdJiraRef{LVV-18231}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1561}{LVV-T1561} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0388\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0388-v-01}{DMS-REQ-0388-V-01}
+    \\\vcdJiraRef{LVV-18232}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1562}{LVV-T1562} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0390\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0390-v-01}{DMS-REQ-0390-V-01}
+    \\\vcdJiraRef{LVV-18233}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1563}{LVV-T1563} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0389\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0389-v-01}{DMS-REQ-0389-V-01}
+    \\\vcdJiraRef{LVV-18234}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1564}{LVV-T1564} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0394\\\vcdDocRef{LSE-61}~{\tiny (p. Not Set)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0394-v-01}{DMS-REQ-0394-V-01}
+    \\\vcdJiraRef{LVV-18295}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0391\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0391-v-01}{DMS-REQ-0391-V-01}
+    \\\vcdJiraRef{LVV-18297}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0392\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0392-v-01}{DMS-REQ-0392-V-01}
+    \\\vcdJiraRef{LVV-18298}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0393\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0393-v-01}{DMS-REQ-0393-V-01}
+    \\\vcdJiraRef{LVV-18299}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0395\\\vcdDocRef{LSE-61}~{\tiny (p. Not Set)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0395-v-01}{DMS-REQ-0395-V-01}
+    \\\vcdJiraRef{LVV-18465}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-68 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-68 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
+  \begin{tabular}{@{}l@{}}
   CA-DM-DAQ-ICD-0094\\\vcdDocRef{LSE-68}~{\tiny (p. Not Set)}
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
@@ -5384,6 +5686,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-69 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-69 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   CA-DM-CON-ICD-0003\\\vcdDocRef{LSE-69}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -5608,6 +5926,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-72 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-72 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   OCS-DM-COM-ICD-0040\\\vcdDocRef{LSE-72}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -6440,6 +6774,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-75 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-75 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   DM-TS-CON-ICD-0003\\\vcdDocRef{LSE-75}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -6584,6 +6934,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-130 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-130 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   CA-DM-SUP-ICD-0026\\\vcdDocRef{LSE-130}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -7080,6 +7446,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-131 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-131 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   EP-DM-CON-ICD-0004\\\vcdDocRef{LSE-131}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -7240,6 +7622,70 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
+  \begin{tabular}{@{}l@{}}
+  EP-DM-CON-ICD-0036\\\vcdDocRef{LSE-131}~{\tiny (p. Not Set)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{ep-dm-con-icd-0036-v-01}{EP-DM-CON-ICD-0036-V-01}
+    \\\vcdJiraRef{LVV-6751}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{ep-dm-con-icd-0036-v-02}{EP-DM-CON-ICD-0036-V-02}
+    \\\vcdJiraRef{LVV-6752}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  EP-DM-CON-ICD-0035\\\vcdDocRef{LSE-131}~{\tiny (p. Not Set)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{ep-dm-con-icd-0035-v-01}{EP-DM-CON-ICD-0035-V-01}
+    \\\vcdJiraRef{LVV-6757}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{ep-dm-con-icd-0035-v-02}{EP-DM-CON-ICD-0035-V-02}
+    \\\vcdJiraRef{LVV-6758}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  EP-DM-CON-ICD-0037\\\vcdDocRef{LSE-131}~{\tiny (p. Not Set)}
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{ep-dm-con-icd-0037-v-01}{EP-DM-CON-ICD-0037-V-01}
+    \\\vcdJiraRef{LVV-6763}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{ep-dm-con-icd-0037-v-02}{EP-DM-CON-ICD-0037-V-02}
+    \\\vcdJiraRef{LVV-6764}~{\tiny (p. Undefined)}
+    \end{tabular} &
+        & & \\
+  \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-140 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-140 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   DM-TS-AUX-ICD-0020\\\vcdDocRef{LSE-140}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -7608,54 +8054,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
-  \begin{tabular}{@{}l@{}}
-  EP-DM-CON-ICD-0036\\\vcdDocRef{LSE-131}~{\tiny (p. Not Set)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{ep-dm-con-icd-0036-v-01}{EP-DM-CON-ICD-0036-V-01}
-    \\\vcdJiraRef{LVV-6751}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{ep-dm-con-icd-0036-v-02}{EP-DM-CON-ICD-0036-V-02}
-    \\\vcdJiraRef{LVV-6752}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  EP-DM-CON-ICD-0035\\\vcdDocRef{LSE-131}~{\tiny (p. Not Set)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{ep-dm-con-icd-0035-v-01}{EP-DM-CON-ICD-0035-V-01}
-    \\\vcdJiraRef{LVV-6757}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{ep-dm-con-icd-0035-v-02}{EP-DM-CON-ICD-0035-V-02}
-    \\\vcdJiraRef{LVV-6758}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  EP-DM-CON-ICD-0037\\\vcdDocRef{LSE-131}~{\tiny (p. Not Set)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{ep-dm-con-icd-0037-v-01}{EP-DM-CON-ICD-0037-V-01}
-    \\\vcdJiraRef{LVV-6763}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{ep-dm-con-icd-0037-v-02}{EP-DM-CON-ICD-0037-V-02}
-    \\\vcdJiraRef{LVV-6764}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-70 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-70 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   SYS-ALL-COM-ICD-0047\\\vcdDocRef{LSE-70}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -8072,6 +8486,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-209 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-209 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   CPT-OCS-INT-ICD-0001\\\vcdDocRef{LSE-209}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -8808,35 +9238,22 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0372\\\vcdDocRef{LSE-61}~{\tiny (p. 1a)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0372-v-01}{DMS-REQ-0372-V-01}
-    \\\vcdJiraRef{LVV-9637}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1264}{LVV-T1264} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0344\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0344-v-02}{DMS-REQ-0344-V-02}
-    \\\vcdJiraRef{LVV-9744}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0344-v-01}{DMS-REQ-0344-V-01}
-    \\\vcdJiraRef{LVV-18229}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LDM-554 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LDM-554 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   DMS-LSP-REQ-0007\\\vcdDocRef{LDM-554}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -9790,7 +10207,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T636}{LVV-T636} \\
         \vcdDocRef{LDM-540}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-211}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-PRTL-REQ-0002\\\vcdDocRef{LDM-554}~{\tiny (p. Not Set)}
@@ -10463,7 +10885,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T681}{LVV-T681} \\
         \vcdDocRef{LDM-540}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-211}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-PRTL-REQ-0048\\\vcdDocRef{LDM-554}~{\tiny (p. Not Set)}
@@ -11404,7 +11831,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T745}{LVV-T745} \\
         \vcdDocRef{LDM-540}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-211}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-PRTL-REQ-0114\\\vcdDocRef{LDM-554}~{\tiny (p. Not Set)}
@@ -11443,7 +11875,12 @@ These are the Verification Elements and Requirements which are not related to an
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T744}{LVV-T744} \\
         \vcdDocRef{LDM-540}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          None \\
+            \vcdDocRef{DMTR-211}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-PRTL-REQ-0115\\\vcdDocRef{LDM-554}~{\tiny (p. Not Set)}
@@ -12773,162 +13210,22 @@ These are the Verification Elements and Requirements which are not related to an
         \end{tabular} &
           & \notexec{} \\
   \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0384\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0384-v-01}{DMS-REQ-0384-V-01}
-    \\\vcdJiraRef{LVV-18222}~{\tiny (p. 1b)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1524}{LVV-T1524} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0381\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0381-v-01}{DMS-REQ-0381-V-01}
-    \\\vcdJiraRef{LVV-18223}~{\tiny (p. 2)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1525}{LVV-T1525} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0380\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0380-v-01}{DMS-REQ-0380-V-01}
-    \\\vcdJiraRef{LVV-18224}~{\tiny (p. 1b)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1526}{LVV-T1526} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0382\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0382-v-01}{DMS-REQ-0382-V-01}
-    \\\vcdJiraRef{LVV-18225}~{\tiny (p. 1b)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1527}{LVV-T1527} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0385\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0385-v-01}{DMS-REQ-0385-V-01}
-    \\\vcdJiraRef{LVV-18226}~{\tiny (p. 1b)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1528}{LVV-T1528} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0379\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0379-v-01}{DMS-REQ-0379-V-01}
-    \\\vcdJiraRef{LVV-18227}~{\tiny (p. 1b)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1529}{LVV-T1529} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0383\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0383-v-01}{DMS-REQ-0383-V-01}
-    \\\vcdJiraRef{LVV-18228}~{\tiny (p. 1b)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1530}{LVV-T1530} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0386\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0386-v-01}{DMS-REQ-0386-V-01}
-    \\\vcdJiraRef{LVV-18230}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1560}{LVV-T1560} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0387\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0387-v-01}{DMS-REQ-0387-V-01}
-    \\\vcdJiraRef{LVV-18231}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1561}{LVV-T1561} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0388\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0388-v-01}{DMS-REQ-0388-V-01}
-    \\\vcdJiraRef{LVV-18232}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1562}{LVV-T1562} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0390\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0390-v-01}{DMS-REQ-0390-V-01}
-    \\\vcdJiraRef{LVV-18233}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1563}{LVV-T1563} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0389\\\vcdDocRef{LSE-61}~{\tiny (p. 1b)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0389-v-01}{DMS-REQ-0389-V-01}
-    \\\vcdJiraRef{LVV-18234}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1564}{LVV-T1564} \\
-        \vcdDocRef{LDM-639}
-        \end{tabular} &
-          & \notexec{} \\
-  \midrule
+\label{tab:dmvcd}
+\end{longtable}
+}
+
+
+\subsection{LSE-400 Requirements Coverage}
+
+\setlength\LTleft{-0.25in}
+\setlength\LTright{-0.5in}
+{\small
+\begin{longtable}{lllll}
+\caption{ DM LSE-400 Requirements.} \\
+\toprule
+\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
+\toprule
+\endhead
   \begin{tabular}{@{}l@{}}
   OCS-EFD-HS-0001\\\vcdDocRef{LSE-400}~{\tiny (p. Not Set)}
   \end{tabular} &
@@ -13064,52 +13361,8 @@ These are the Verification Elements and Requirements which are not related to an
     \end{tabular} &
         & & \\
   \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0394\\\vcdDocRef{LSE-61}~{\tiny (p. Not Set)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0394-v-01}{DMS-REQ-0394-V-01}
-    \\\vcdJiraRef{LVV-18295}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0391\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0391-v-01}{DMS-REQ-0391-V-01}
-    \\\vcdJiraRef{LVV-18297}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0392\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0392-v-01}{DMS-REQ-0392-V-01}
-    \\\vcdJiraRef{LVV-18298}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0393\\\vcdDocRef{LSE-61}~{\tiny (p. 2)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0393-v-01}{DMS-REQ-0393-V-01}
-    \\\vcdJiraRef{LVV-18299}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
-  \begin{tabular}{@{}l@{}}
-  DMS-REQ-0395\\\vcdDocRef{LSE-61}~{\tiny (p. Not Set)}
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{dms-req-0395-v-01}{DMS-REQ-0395-V-01}
-    \\\vcdJiraRef{LVV-18465}~{\tiny (p. Undefined)}
-    \end{tabular} &
-        & & \\
-  \midrule
 \label{tab:dmvcd}
 \end{longtable}
 }
+
 
