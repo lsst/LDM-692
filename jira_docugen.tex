@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post22+g36ed4a3.d20200522-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
+% using template at /Users/GComoretto/anaconda3/envs/docsteady-dev/lib/python3.7/site-packages/docsteady-1.2rc10.post23+g3292b4e.d20200522-py3.7.egg/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc10.post22+g36ed4a3.d20200522
+% using docsteady version 1.2rc10.post23+g3292b4e.d20200522
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -11,7 +11,7 @@
 
 \section{Summary Information}\label{sec:summary}
 
-The following table \ref{table:summary} provides an overview of the requirements and verification elements coverage.
+Table \ref{table:summary} provides an overview of the requirements and verification elements coverage.
 
 % Summary of Summaries
 \begin{longtable}{rp{2cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
@@ -67,9 +67,9 @@ The following table \ref{table:summary} provides an overview of the requirements
  & 17
  & 110
  & 4
- & 354
+ & 355
  & 515
- & \textbf{ 1000 }
+ & \textbf{ 1001 }
 \\ \hline
 \caption{Summary overview of all DM~requirements and verification elements.}
 \label{table:summary}
@@ -77,7 +77,7 @@ The following table \ref{table:summary} provides an overview of the requirements
 
 
 
-The following table \ref{table:testsummary} provides the Test Cases result summary.
+Table \ref{table:testsummary} provides the Test Cases result summary.
 
 \begin{longtable}{rp{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
 & \rotatebox[origin=l]{60}{ \textbf{ Passed }{\scriptsize \ref{sec:pass} } }
@@ -97,8 +97,8 @@ Test Cases Results
 \label{table:testsummary}
 \end{longtable}
 
-Note that test cases may be related to multiple requirements or verification elements,
-and requirements or verification elements may be related to multiple test cases.
+Note that test cases may be associated with multiple requirements or verification elements,
+and requirements or verification elements may be associated with multiple test cases.
 
 
 \subsection{Coverage Description}
@@ -2631,8 +2631,13 @@ For a full description of the prioritization levels, see \cite{DMSR}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           & \notexec{} \\
-          \cmidrule{3-5}
-          & &
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0282-v-02}{DMS-REQ-0282-V-02}
+    \\\vcdJiraRef{LVV-18881}~{\tiny
+    }
+    \end{tabular} &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1862}{LVV-T1862} \\
         \vcdDocRef{LDM-639}
