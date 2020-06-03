@@ -1,0 +1,2 @@
+#!/bin/bash
+docsteady generate-vcd --sql True --spec "LSE-61|LDM-639" DM jira_docugen.tex
