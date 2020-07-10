@@ -18,3 +18,4 @@ The bin directory of texmf must be in your path for generateAcronyms.py to be fo
 - Accepted version on DocuShare: https://ls.st/LDM-692
 - Live drafts: https://ldm-692.lsst.io
 - GitHub: https://github.com/lsst/LDM-692
+
