@@ -24,22 +24,22 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  & \rotatebox[origin=l]{60}{ \textbf{ Total } }
 \\ \toprule
 \textbf{ DM Requirements} & (All)
- & 11
+ & 10
  & 104
- & 3
+ & 4
  & 332
  & 260
  & \textbf{ 710 }
 \\ \toprule
 \citeds{LSE-61} & 1a  & 2  & 25  & 1  & 27  &   & \textbf{ 55 }
  \\ \cdashline{2-8}
- & 1b  & 7  & 23  & 2  & 75  & 4  & \textbf{ 111 }
+ & 1b  & 6  & 23  & 3  & 75  & 4  & \textbf{ 111 }
  \\ \cdashline{2-8}
  & 2  &   & 4  &   & 42  & 6  & \textbf{ 52 }
  \\ \cdashline{2-8}
  & 3  &   & 1  &   & 5  &   & \textbf{ 6 }
  \\ \cdashline{2-8}
- & (All)  & 9  & 53  & 3  & 149  & 10  & \textbf{ 224 }
+ & (All)  & 8  & 53  & 4  & 149  & 10  & \textbf{ 224 }
  \\ \hline
 \citeds{LSE-68} & Not Set  &   &   &   &   & 19  & \textbf{ 19 }
  \\ \hline
@@ -64,9 +64,9 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
 \citeds{LSE-400} & Not Set  &   &   &   &   & 15  & \textbf{ 15 }
  \\ \hline
 \textbf{ DM Verification E.} & (All)
- & 17
+ & 16
  & 110
- & 4
+ & 5
  & 361
  & 511
  & \textbf{ 1003 }
@@ -87,11 +87,11 @@ Table \ref{table:testsummary} provides the Test Cases result summary.
 & \rotatebox[origin=l]{60}{ \textbf{Total}}
 \\ \toprule
 Test Cases Results
-& 47
+& 48
 & 14
-& 2
+& 3
 & 467
- & \textbf{ 530 } \\
+ & \textbf{ 532 } \\
 \bottomrule
 \caption{Summary overview of DM~test cases executions.}
 \label{table:testsummary}
@@ -4240,6 +4240,30 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \cndpass \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1946}{LVV-T1946} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-08-18 \\
+            \vcdDocRef{DMTR-261}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1947}{LVV-T1947} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-08-18 \\
+            \vcdDocRef{DMTR-261}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \failed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0348\\\vcdDocRef{LSE-61}~{\tiny
