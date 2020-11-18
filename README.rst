@@ -1,7 +1,7 @@
 .. image:: https://img.shields.io/badge/ldm--692-lsst.io-brightgreen.svg
    :target: https://ldm-692.lsst.io
-.. image:: https://travis-ci.org/lsst/LDM-692.svg
-   :target: https://travis-ci.org/lsst/LDM-692
+.. image:: https://github.com/lsst/LDM-692/workflows/CI/badge.svg
+   :target: https://github.com/lsst/LDM-692/actions/
 
 ################################
 DM Verification Control Document
