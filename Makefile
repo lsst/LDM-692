@@ -2,9 +2,9 @@ DOCTYPE = LDM
 DOCNUMBER = 692
 DOCNAME = $(DOCTYPE)-$(DOCNUMBER)
 JOBNAME = $(DOCNAME)
-TEX = $(filter-out $(wildcard *acronyms.tex) , $(wildcard *.tex))
-
-export TEXMFHOME = lsst-texmf/texmf
+TEX = $(filter-out $(wildcard *acronyms.tex aglos*tex) , $(wildcard *.tex))
+ 
+export TEXMFHOME ?= lsst-texmf/texmf
 
 # Version information extracted from git.
 GITVERSION := $(shell git log -1 --date=short --pretty=%h)
