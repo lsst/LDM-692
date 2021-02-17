@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /usr/local/lib/python3.7/site-packages/docsteady/templates/vcd.latex.jinja2.
+% using template at /Users/womullan/LSSTgit/docsteady/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 1.2rc22
+% using docsteady version 2.0.post8+g11c7148
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -24,22 +24,24 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  & \rotatebox[origin=l]{60}{ \textbf{ Total } }
 \\ \toprule
 \textbf{ DM Requirements} & (All)
- & 11
- & 104
- & 4
- & 331
- & 260
- & \textbf{ 710 }
+ & 18
+ & 95
+ & 3
+ & 335
+ & 268
+ & \textbf{ 719 }
 \\ \toprule
-\citeds{LSE-61} & 1a  & 3  & 25  & 1  & 26  &   & \textbf{ 55 }
+\citeds{LSE-61} & 1a  & 8  & 21  &   & 24  & 2  & \textbf{ 55 }
  \\ \cdashline{2-8}
- & 1b  & 6  & 23  & 3  & 75  & 4  & \textbf{ 111 }
+ & 1b  & 8  & 19  & 3  & 77  & 4  & \textbf{ 111 }
  \\ \cdashline{2-8}
- & 2  &   & 4  &   & 42  & 6  & \textbf{ 52 }
+ & 2  &   & 4  &   & 45  & 4  & \textbf{ 53 }
  \\ \cdashline{2-8}
- & 3  &   & 1  &   & 5  &   & \textbf{ 6 }
+ & 3  &   &   &   & 6  &   & \textbf{ 6 }
  \\ \cdashline{2-8}
- & (All)  & 9  & 53  & 4  & 148  & 10  & \textbf{ 224 }
+ & Not Set  &   &   &   &   & 1  & \textbf{ 1 }
+ \\ \cdashline{2-8}
+ & (All)  & 16  & 44  & 3  & 152  & 11  & \textbf{ 226 }
  \\ \hline
 \citeds{LSE-68} & Not Set  &   &   &   &   & 19  & \textbf{ 19 }
  \\ \hline
@@ -53,7 +55,7 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  \\ \hline
 \citeds{LSE-131} & Not Set  &   &   &   &   & 13  & \textbf{ 13 }
  \\ \hline
-\citeds{LSE-140} & Not Set  &   &   &   &   & 23  & \textbf{ 23 }
+\citeds{LSE-140} & Not Set  &   &   &   &   & 30  & \textbf{ 30 }
  \\ \hline
 \citeds{LSE-70} & Not Set  &   &   &   &   & 26  & \textbf{ 26 }
  \\ \hline
@@ -63,13 +65,15 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  \\ \hline
 \citeds{LSE-400} & Not Set  &   &   &   &   & 15  & \textbf{ 15 }
  \\ \hline
+\toprule
 \textbf{ DM Verification E.} & (All)
- & 17
- & 110
- & 5
- & 360
- & 511
- & \textbf{ 1003 }
+
+ & 25
+ & 104
+ & 3
+ & 366
+ & 526
+ & \textbf{ 1024 }
 \\ \hline
 \caption{Summary overview of all DM~requirements and verification elements.}
 \label{table:summary}
@@ -87,11 +91,11 @@ Table \ref{table:testsummary} provides the Test Cases result summary.
 & \rotatebox[origin=l]{60}{ \textbf{Total}}
 \\ \toprule
 Test Cases Results
-& 52
-& 14
-& 3
-& 463
- & \textbf{ 532 } \\
+& 62
+& 13
+& 2
+& 482
+ & \textbf{ 559 } \\
 \bottomrule
 \caption{Summary overview of DM~test cases executions.}
 \label{table:testsummary}
@@ -175,6 +179,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 
 
 \subsection{LSE-61 Requirements Coverage}
+\label{sec:LSE-61coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -207,8 +212,8 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2018-07-04 \\
-            \vcdDocRef{DMTR-91}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P1}{LVV-P1} }
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
           \cndpass \\
   \midrule
@@ -247,7 +252,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T125}{LVV-T125} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-11-03 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0010\\\vcdDocRef{LSE-61}~{\tiny
@@ -264,7 +274,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -276,7 +286,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \failed \\
@@ -286,7 +296,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T36}{LVV-T36} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-10-02 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0018\\\vcdDocRef{LSE-61}~{\tiny
@@ -301,7 +316,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T29}{LVV-T29} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -310,7 +330,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -322,7 +342,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-06-24 \\
-            \vcdDocRef{DMTR-102}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P10}{LVV-P10} }
           \end{tabular} &
           \passed \\
@@ -334,7 +354,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-20 \\
-            \vcdDocRef{DMTR-171}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P50}{LVV-P50} }
           \end{tabular} &
           \passed \\
@@ -345,18 +365,35 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-08-20 \\
-            \vcdDocRef{DMTR-181}
+           \\
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P54}{LVV-P54} }
           \end{tabular} &
-          \passed \\
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-09-03 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \passed \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1934}{LVV-T1934} \\
+        \vcdDocRef{}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-10-28 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P76}{LVV-P76} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0020\\\vcdDocRef{LSE-61}~{\tiny
@@ -380,7 +417,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -392,7 +429,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-06-24 \\
-            \vcdDocRef{DMTR-102}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P10}{LVV-P10} }
           \end{tabular} &
           \passed \\
@@ -404,7 +441,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-20 \\
-            \vcdDocRef{DMTR-171}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P50}{LVV-P50} }
           \end{tabular} &
           \passed \\
@@ -412,6 +449,26 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-09-03 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \passed \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DMS-REQ-0022\\\vcdDocRef{LSE-61}~{\tiny
+ (p. 2)   }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0022-v-01}{DMS-REQ-0022-V-01}
+    \\\vcdJiraRef{LVV-10}~{\tiny
+ (p. Not Set)     }
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T31}{LVV-T31} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
           & \notexec{} \\
@@ -429,7 +486,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T32}{LVV-T32} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -438,7 +500,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -450,7 +512,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-06-24 \\
-            \vcdDocRef{DMTR-102}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P10}{LVV-P10} }
           \end{tabular} &
           \passed \\
@@ -462,7 +524,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-20 \\
-            \vcdDocRef{DMTR-171}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P50}{LVV-P50} }
           \end{tabular} &
           \passed \\
@@ -473,18 +535,35 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-08-20 \\
-            \vcdDocRef{DMTR-181}
+           \\
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P54}{LVV-P54} }
           \end{tabular} &
-          \passed \\
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-09-03 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \passed \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1934}{LVV-T1934} \\
+        \vcdDocRef{}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-10-28 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P76}{LVV-P76} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0029\\\vcdDocRef{LSE-61}~{\tiny
@@ -501,7 +580,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -513,7 +592,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -523,7 +602,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T39}{LVV-T39} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-11-03 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0030\\\vcdDocRef{LSE-61}~{\tiny
@@ -540,7 +624,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -552,7 +636,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -563,11 +647,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-01-28 \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          2020-08-19 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
-          \cndpass \\
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -581,7 +665,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-01-28 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -622,11 +706,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2019-03-31 \\
-            \vcdDocRef{DMTR-111}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P15}{LVV-P15} }
+          2020-08-25 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P62}{LVV-P62} }
           \end{tabular} &
-          \passed \\
+          \cndpass \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0034\\\vcdDocRef{LSE-61}~{\tiny
@@ -673,7 +757,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -685,7 +769,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -727,7 +811,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -739,7 +823,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-01-23 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -787,19 +871,19 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T84}{LVV-T84} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T368}{LVV-T368} \\
-        \vcdDocRef{}
+        \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2018-12-06 \\
-            \vcdDocRef{DMTR-112}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P16}{LVV-P16} }
-          \end{tabular} &
-          \passed \\
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0061\\\vcdDocRef{LSE-61}~{\tiny
@@ -814,7 +898,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T85}{LVV-T85} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0062\\\vcdDocRef{LSE-61}~{\tiny
@@ -855,20 +944,6 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \\\vcdJiraRef{LVV-27}~{\tiny
  (p. 1b)     }
     \end{tabular} &
-        \multicolumn{3}{c}{
-        \begin{tabular}{ r l }
-        Verified in: &
-            \hyperlink{dms-api-req-0028-v-01}{DMS-API-REQ-0028-V-01}(\vcdJiraRef{LVV-10004})\\
-               &
-            \hyperlink{dms-api-req-0016-v-01}{DMS-API-REQ-0016-V-01}(\vcdJiraRef{LVV-10016})\\
-               &
-            \hyperlink{dms-api-req-0017-v-01}{DMS-API-REQ-0017-V-01}(\vcdJiraRef{LVV-10018})\\
-               &
-            \hyperlink{dms-api-req-0018-v-01}{DMS-API-REQ-0018-V-01}(\vcdJiraRef{LVV-10017})\\
-        \end{tabular}
-        } \\
-          \cmidrule{3-5}
-          & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T134}{LVV-T134} \\
         \vcdDocRef{LDM-639}
@@ -897,7 +972,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -909,7 +984,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-06-24 \\
-            \vcdDocRef{DMTR-102}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P10}{LVV-P10} }
           \end{tabular} &
           \passed \\
@@ -921,7 +996,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -933,7 +1008,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-20 \\
-            \vcdDocRef{DMTR-171}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P50}{LVV-P50} }
           \end{tabular} &
           \passed \\
@@ -944,18 +1019,23 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-08-20 \\
-            \vcdDocRef{DMTR-181}
+           \\
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P54}{LVV-P54} }
           \end{tabular} &
-          \passed \\
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-09-03 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0069\\\vcdDocRef{LSE-61}~{\tiny
@@ -972,7 +1052,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -984,7 +1064,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -996,7 +1076,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -1006,7 +1086,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T38}{LVV-T38} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-11-04 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -1014,11 +1099,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2019-03-31 \\
-            \vcdDocRef{DMTR-111}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P15}{LVV-P15} }
+          2020-08-25 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P62}{LVV-P62} }
           \end{tabular} &
-          \passed \\
+          \cndpass \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0070\\\vcdDocRef{LSE-61}~{\tiny
@@ -1035,7 +1120,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -1047,7 +1132,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -1059,7 +1144,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-04 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -1079,7 +1164,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -1091,7 +1176,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -1101,7 +1186,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T42}{LVV-T42} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-11-04 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0074\\\vcdDocRef{LSE-61}~{\tiny
@@ -1118,7 +1208,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \failed \\
@@ -1152,7 +1242,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-08 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -1164,7 +1254,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-08 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -1176,7 +1266,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-08 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -1211,7 +1301,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-20 \\
-            \vcdDocRef{DMTR-261}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
           \passed \\
@@ -1223,7 +1313,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-19 \\
-            \vcdDocRef{DMTR-261}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
           \passed \\
@@ -1286,7 +1376,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T45}{LVV-T45} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0098\\\vcdDocRef{LSE-61}~{\tiny
@@ -1316,7 +1411,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T46}{LVV-T46} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0100\\\vcdDocRef{LSE-61}~{\tiny
@@ -1393,7 +1493,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -1568,7 +1668,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T88}{LVV-T88} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0131\\\vcdDocRef{LSE-61}~{\tiny
@@ -1621,16 +1726,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \\\vcdJiraRef{LVV-60}~{\tiny
  (p. 1a)     }
     \end{tabular} &
-        \multicolumn{3}{c}{
-        \begin{tabular}{ r l }
-        Verified in: &
-            \hyperlink{dms-req-0298-v-01}{DMS-REQ-0298-V-01}(\vcdJiraRef{LVV-129})\\
-               &
-            \hyperlink{dms-req-0300-v-01}{DMS-REQ-0300-V-01}(\vcdJiraRef{LVV-131})\\
-               &
-            \hyperlink{dms-req-0299-v-01}{DMS-REQ-0299-V-01}(\vcdJiraRef{LVV-130})\\
-        \end{tabular}
-        } \\
+        & & \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0156\\\vcdDocRef{LSE-61}~{\tiny
@@ -1641,16 +1737,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \\\vcdJiraRef{LVV-61}~{\tiny
  (p. 1a)     }
     \end{tabular} &
-        \multicolumn{3}{c}{
-        \begin{tabular}{ r l }
-        Verified in: &
-            \hyperlink{dms-req-0304-v-01}{DMS-REQ-0304-V-01}(\vcdJiraRef{LVV-135})\\
-               &
-            \hyperlink{dms-req-0303-v-01}{DMS-REQ-0303-V-01}(\vcdJiraRef{LVV-134})\\
-               &
-            \hyperlink{dms-req-0302-v-01}{DMS-REQ-0302-V-01}(\vcdJiraRef{LVV-133})\\
-        \end{tabular}
-        } \\
+        & & \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0158\\\vcdDocRef{LSE-61}~{\tiny
@@ -1661,25 +1748,13 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \\\vcdJiraRef{LVV-62}~{\tiny
  (p. 1a)     }
     \end{tabular} &
-        \multicolumn{3}{c}{
-        \begin{tabular}{ r l }
-        Verified in: &
-            \hyperlink{dms-req-0305-v-01}{DMS-REQ-0305-V-01}(\vcdJiraRef{LVV-136})\\
-               &
-            \hyperlink{dms-req-0307-v-01}{DMS-REQ-0307-V-01}(\vcdJiraRef{LVV-138})\\
-               &
-            \hyperlink{dms-req-0306-v-01}{DMS-REQ-0306-V-01}(\vcdJiraRef{LVV-137})\\
-        \end{tabular}
-        } \\
-          \cmidrule{3-5}
-          & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T11}{LVV-T11} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -1702,14 +1777,9 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T368}{LVV-T368} \\
-        \vcdDocRef{}
+        \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2018-12-06 \\
-            \vcdDocRef{DMTR-112}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P16}{LVV-P16} }
-          \end{tabular} &
-          \passed \\
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0161\\\vcdDocRef{LSE-61}~{\tiny
@@ -1791,7 +1861,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T176}{LVV-T176} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P4}{LVV-P4} }
+          \end{tabular} &
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -1882,7 +1957,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-151}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P47}{LVV-P47} }
           \end{tabular} &
           \passed \\
@@ -1970,6 +2045,17 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
           & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
+  DMS-REQ-0177\\\vcdDocRef{LSE-61}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0177-v-01}{DMS-REQ-0177-V-01}
+    \\\vcdJiraRef{LVV-79}~{\tiny
+ (p. Not Set)     }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
   DMS-REQ-0178\\\vcdDocRef{LSE-61}~{\tiny
  (p. 1b)   }
   \end{tabular} &
@@ -1982,7 +2068,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T190}{LVV-T190} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0180\\\vcdDocRef{LSE-61}~{\tiny
@@ -1997,7 +2088,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T193}{LVV-T193} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0181\\\vcdDocRef{LSE-61}~{\tiny
@@ -2012,7 +2108,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T194}{LVV-T194} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0182\\\vcdDocRef{LSE-61}~{\tiny
@@ -2027,7 +2128,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T195}{LVV-T195} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0183\\\vcdDocRef{LSE-61}~{\tiny
@@ -2042,7 +2148,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T196}{LVV-T196} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P73}{LVV-P73} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0185\\\vcdDocRef{LSE-61}~{\tiny
@@ -2231,7 +2342,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -2243,7 +2354,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-06-24 \\
-            \vcdDocRef{DMTR-102}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P10}{LVV-P10} }
           \end{tabular} &
           \passed \\
@@ -2278,7 +2389,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2290,7 +2401,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2308,11 +2419,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2019-03-31 \\
-            \vcdDocRef{DMTR-111}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P15}{LVV-P15} }
+          2020-08-25 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P62}{LVV-P62} }
           \end{tabular} &
-          \passed \\
+          \cndpass \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0268\\\vcdDocRef{LSE-61}~{\tiny
@@ -2329,7 +2440,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2356,7 +2467,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -2368,7 +2479,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -2395,7 +2506,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -2422,7 +2533,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -2434,7 +2545,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -2477,7 +2588,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -2534,7 +2645,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2546,7 +2657,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \cndpass \\
@@ -2599,7 +2710,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2626,7 +2737,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2638,7 +2749,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2744,7 +2855,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -2756,7 +2867,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-06-24 \\
-            \vcdDocRef{DMTR-102}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P10}{LVV-P10} }
           \end{tabular} &
           \passed \\
@@ -2768,7 +2879,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -2788,7 +2899,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -2881,7 +2992,24 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T115}{LVV-T115} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1935}{LVV-T1935} \\
+        \vcdDocRef{}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-10-28 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P76}{LVV-P76} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0290\\\vcdDocRef{LSE-61}~{\tiny
@@ -2943,7 +3071,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -2970,7 +3098,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3012,7 +3140,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -3023,11 +3151,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2019-03-31 \\
-            \vcdDocRef{DMTR-111}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P15}{LVV-P15} }
+          2020-08-25 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P62}{LVV-P62} }
           \end{tabular} &
-          \passed \\
+          \cndpass \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0297\\\vcdDocRef{LSE-61}~{\tiny
@@ -3042,7 +3170,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T146}{LVV-T146} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0298\\\vcdDocRef{LSE-61}~{\tiny
@@ -3062,14 +3195,9 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T368}{LVV-T368} \\
-        \vcdDocRef{}
+        \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2018-12-06 \\
-            \vcdDocRef{DMTR-112}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P16}{LVV-P16} }
-          \end{tabular} &
-          \passed \\
+          & \notexec{} \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -3078,7 +3206,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2018-12-06 \\
-            \vcdDocRef{DMTR-112}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P16}{LVV-P16} }
           \end{tabular} &
           \passed \\
@@ -3105,8 +3233,32 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2018-12-06 \\
-            \vcdDocRef{DMTR-112}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P16}{LVV-P16} }
+          \end{tabular} &
+          \passed \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1934}{LVV-T1934} \\
+        \vcdDocRef{}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-10-28 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P76}{LVV-P76} }
+          \end{tabular} &
+          \passed \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1935}{LVV-T1935} \\
+        \vcdDocRef{}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-10-28 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P76}{LVV-P76} }
           \end{tabular} &
           \passed \\
   \midrule
@@ -3155,7 +3307,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3182,7 +3334,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3224,7 +3376,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3234,7 +3386,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T144}{LVV-T144} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0306\\\vcdDocRef{LSE-61}~{\tiny
@@ -3251,7 +3408,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3261,7 +3418,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T145}{LVV-T145} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0307\\\vcdDocRef{LSE-61}~{\tiny
@@ -3293,7 +3455,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3305,7 +3467,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -3324,8 +3486,8 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2018-07-17 \\
-            \vcdDocRef{DMTR-91}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P1}{LVV-P1} }
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
           \cndpass \\
           \cmidrule{3-5}
@@ -3335,11 +3497,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2019-03-31 \\
-            \vcdDocRef{DMTR-111}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P15}{LVV-P15} }
+          2020-08-25 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P62}{LVV-P62} }
           \end{tabular} &
-          \passed \\
+          \cndpass \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -3347,9 +3509,9 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2019-03-31 \\
-            \vcdDocRef{DMTR-111}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P15}{LVV-P15} }
+          2020-08-25 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P62}{LVV-P62} }
           \end{tabular} &
           \passed \\
   \midrule
@@ -3382,7 +3544,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-09-16 \\
-            \vcdDocRef{DMTR-121}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P32}{LVV-P32} }
           \end{tabular} &
           \passed \\
@@ -3491,7 +3653,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
           \end{tabular} &
           \passed \\
@@ -3503,7 +3665,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-06-24 \\
-            \vcdDocRef{DMTR-102}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P10}{LVV-P10} }
           \end{tabular} &
           \passed \\
@@ -3515,7 +3677,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-20 \\
-            \vcdDocRef{DMTR-171}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P50}{LVV-P50} }
           \end{tabular} &
           \passed \\
@@ -3525,7 +3687,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1556}{LVV-T1556} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-09-03 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P55}{LVV-P55} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0316\\\vcdDocRef{LSE-61}~{\tiny
@@ -3540,7 +3707,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T191}{LVV-T191} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0317\\\vcdDocRef{LSE-61}~{\tiny
@@ -3714,7 +3886,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3726,7 +3898,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -3738,7 +3910,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-01-23 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -3803,7 +3975,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3815,7 +3987,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \cndpass \\
@@ -3827,7 +3999,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -3839,7 +4011,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -3896,7 +4068,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3908,7 +4080,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3920,7 +4092,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \cndpass \\
@@ -3932,7 +4104,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -3944,7 +4116,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -4091,8 +4263,8 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2018-07-04 \\
-            \vcdDocRef{DMTR-91}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P1}{LVV-P1} }
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
           \cndpass \\
   \midrule
@@ -4118,8 +4290,8 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2018-07-04 \\
-            \vcdDocRef{DMTR-91}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P1}{LVV-P1} }
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
           \cndpass \\
       \cmidrule{2-5}
@@ -4218,8 +4390,20 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-61}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P45}{LVV-P45} }
+          \end{tabular} &
+          \passed \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1934}{LVV-T1934} \\
+        \vcdDocRef{}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2020-10-28 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P76}{LVV-P76} }
           \end{tabular} &
           \passed \\
   \midrule
@@ -4238,7 +4422,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \passed \\
@@ -4250,7 +4434,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-51}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P43}{LVV-P43} }
           \end{tabular} &
           \cndpass \\
@@ -4262,7 +4446,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -4274,7 +4458,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-22 \\
-            \vcdDocRef{DMTR-53}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P44}{LVV-P44} }
           \end{tabular} &
           \passed \\
@@ -4285,11 +4469,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-01-29 \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          2020-08-19 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
-          \cndpass \\
+          \passed \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -4298,7 +4482,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-18 \\
-            \vcdDocRef{DMTR-261}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
           \passed \\
@@ -4310,7 +4494,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-08-18 \\
-            \vcdDocRef{DMTR-261}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
           \failed \\
@@ -4337,8 +4521,8 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2018-07-04 \\
-            \vcdDocRef{DMTR-91}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P1}{LVV-P1} }
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
           \cndpass \\
   \midrule
@@ -4385,7 +4569,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T133}{LVV-T133} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-09-29 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0352\\\vcdDocRef{LSE-61}~{\tiny
@@ -4444,7 +4633,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-08 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -4456,7 +4645,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-08 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -4468,7 +4657,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -4480,7 +4669,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4492,7 +4681,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4547,7 +4736,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4559,7 +4748,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4576,7 +4765,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-08 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -4588,7 +4777,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4600,7 +4789,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4620,7 +4809,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-08 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -4632,7 +4821,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -4644,7 +4833,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4656,7 +4845,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -4990,7 +5179,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1756}{LVV-T1756} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-09-29 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \notexec \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -5022,11 +5216,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-02-07 \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          2020-09-29 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
-          \failed \\
+          \notexec \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
@@ -5034,9 +5228,9 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-02-07 \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          2020-09-29 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
           \passed \\
       \cmidrule{2-5}
@@ -5070,9 +5264,9 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-02-07 \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          2020-09-29 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
           \passed \\
       \cmidrule{2-5}
@@ -5144,11 +5338,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2020-02-07 \\
-            \vcdDocRef{DMTR-201}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
+          2020-09-29 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
           \end{tabular} &
-          \failed \\
+          \notexec \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -5160,7 +5354,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1757}{LVV-T1757} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-09-29 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
       \cmidrule{2-5}
       &
     \begin{tabular}{@{}l@{}}
@@ -5317,9 +5516,9 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2019-03-31 \\
-            \vcdDocRef{DMTR-111}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P15}{LVV-P15} }
+          2020-08-25 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P62}{LVV-P62} }
           \end{tabular} &
           \passed \\
           \cmidrule{3-5}
@@ -5330,7 +5529,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5354,7 +5553,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5378,7 +5577,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5402,7 +5601,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5426,7 +5625,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5450,7 +5649,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5474,7 +5673,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5498,7 +5697,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5534,7 +5733,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5558,7 +5757,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5582,7 +5781,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5606,7 +5805,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5626,7 +5825,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \passed \\
@@ -5638,7 +5837,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -5650,7 +5849,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-07-09 \\
-            \vcdDocRef{DMTR-71}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P46}{LVV-P46} }
           \end{tabular} &
           \cndpass \\
@@ -5677,7 +5876,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-06 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5714,7 +5913,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-02-07 \\
-            \vcdDocRef{DMTR-201}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P65}{LVV-P65} }
           \end{tabular} &
           \passed \\
@@ -5740,7 +5939,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1264}{LVV-T1264} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2020-11-07 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P71}{LVV-P71} }
+          \end{tabular} &
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0344\\\vcdDocRef{LSE-61}~{\tiny
@@ -6000,7 +6204,59 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \\\vcdJiraRef{LVV-18298}~{\tiny
     }
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2091}{LVV-T2091} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0392-v-02}{DMS-REQ-0392-V-02}
+    \\\vcdJiraRef{LVV-19214}~{\tiny
+    }
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2092}{LVV-T2092} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0392-v-03}{DMS-REQ-0392-V-03}
+    \\\vcdJiraRef{LVV-19215}~{\tiny
+    }
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2093}{LVV-T2093} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0392-v-04}{DMS-REQ-0392-V-04}
+    \\\vcdJiraRef{LVV-19216}~{\tiny
+    }
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2094}{LVV-T2094} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0392-v-05}{DMS-REQ-0392-V-05}
+    \\\vcdJiraRef{LVV-19218}~{\tiny
+    }
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2095}{LVV-T2095} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0393\\\vcdDocRef{LSE-61}~{\tiny
@@ -6011,7 +6267,30 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \\\vcdJiraRef{LVV-18299}~{\tiny
     }
     \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2097}{LVV-T2097} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dms-req-0393-v-02}{DMS-REQ-0393-V-02}
+    \\\vcdJiraRef{LVV-19217}~{\tiny
+    }
+    \end{tabular} &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2094}{LVV-T2094} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
+          \cmidrule{3-5}
+          & &
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2096}{LVV-T2096} \\
+        \vcdDocRef{LDM-639}
+        \end{tabular} &
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0395\\\vcdDocRef{LSE-61}~{\tiny
@@ -6026,7 +6305,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1830}{LVV-T1830} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+           \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P72}{LVV-P72} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0396\\\vcdDocRef{LSE-61}~{\tiny
@@ -6054,11 +6338,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           & \notexec{} \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-61vcd}
 \end{longtable}
 }
 
 \subsection{LSE-68 Requirements Coverage}
+\label{sec:LSE-68coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -6430,11 +6715,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-68vcd}
 \end{longtable}
 }
 
 \subsection{LSE-69 Requirements Coverage}
+\label{sec:LSE-69coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -6717,11 +7003,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-69vcd}
 \end{longtable}
 }
 
 \subsection{LSE-72 Requirements Coverage}
+\label{sec:LSE-72coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -7720,11 +8007,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-72vcd}
 \end{longtable}
 }
 
 \subsection{LSE-75 Requirements Coverage}
+\label{sec:LSE-75coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -7906,11 +8194,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-75vcd}
 \end{longtable}
 }
 
 \subsection{LSE-130 Requirements Coverage}
+\label{sec:LSE-130coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -8510,11 +8799,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-130vcd}
 \end{longtable}
 }
 
 \subsection{LSE-131 Requirements Coverage}
+\label{sec:LSE-131coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -8772,11 +9062,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-131vcd}
 \end{longtable}
 }
 
 \subsection{LSE-140 Requirements Coverage}
+\label{sec:LSE-140coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -8840,6 +9131,63 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dm-ts-aux-icd-0027-v-02}{DM-TS-AUX-ICD-0027-V-02}
     \\\vcdJiraRef{LVV-6433}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DM-TS-AUX-ICD-0022\\\vcdDocRef{LSE-140}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0022-v-01}{DM-TS-AUX-ICD-0022-V-01}
+    \\\vcdJiraRef{LVV-6438}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0022-v-02}{DM-TS-AUX-ICD-0022-V-02}
+    \\\vcdJiraRef{LVV-6439}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DM-TS-AUX-ICD-0023\\\vcdDocRef{LSE-140}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0023-v-01}{DM-TS-AUX-ICD-0023-V-01}
+    \\\vcdJiraRef{LVV-6444}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0023-v-02}{DM-TS-AUX-ICD-0023-V-02}
+    \\\vcdJiraRef{LVV-6445}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DM-TS-AUX-ICD-0021\\\vcdDocRef{LSE-140}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0021-v-01}{DM-TS-AUX-ICD-0021-V-01}
+    \\\vcdJiraRef{LVV-6450}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0021-v-02}{DM-TS-AUX-ICD-0021-V-02}
+    \\\vcdJiraRef{LVV-6451}~{\tiny
     }
     \end{tabular} &
         & & \\
@@ -8992,6 +9340,82 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \begin{tabular}{@{}l@{}}
     \hypertarget{dm-ts-aux-icd-0008-v-02}{DM-TS-AUX-ICD-0008-V-02}
     \\\vcdJiraRef{LVV-6499}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DM-TS-AUX-ICD-0010\\\vcdDocRef{LSE-140}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0010-v-01}{DM-TS-AUX-ICD-0010-V-01}
+    \\\vcdJiraRef{LVV-6504}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0010-v-02}{DM-TS-AUX-ICD-0010-V-02}
+    \\\vcdJiraRef{LVV-6505}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DM-TS-AUX-ICD-0009\\\vcdDocRef{LSE-140}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0009-v-01}{DM-TS-AUX-ICD-0009-V-01}
+    \\\vcdJiraRef{LVV-6510}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0009-v-02}{DM-TS-AUX-ICD-0009-V-02}
+    \\\vcdJiraRef{LVV-6511}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DM-TS-AUX-ICD-0011\\\vcdDocRef{LSE-140}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0011-v-01}{DM-TS-AUX-ICD-0011-V-01}
+    \\\vcdJiraRef{LVV-6516}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0011-v-02}{DM-TS-AUX-ICD-0011-V-02}
+    \\\vcdJiraRef{LVV-6517}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+  \midrule
+  \begin{tabular}{@{}l@{}}
+  DM-TS-AUX-ICD-0006\\\vcdDocRef{LSE-140}~{\tiny
+  }
+  \end{tabular} &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0006-v-01}{DM-TS-AUX-ICD-0006-V-01}
+    \\\vcdJiraRef{LVV-6522}~{\tiny
+    }
+    \end{tabular} &
+        & & \\
+      \cmidrule{2-5}
+      &
+    \begin{tabular}{@{}l@{}}
+    \hypertarget{dm-ts-aux-icd-0006-v-02}{DM-TS-AUX-ICD-0006-V-02}
+    \\\vcdJiraRef{LVV-6523}~{\tiny
     }
     \end{tabular} &
         & & \\
@@ -9224,11 +9648,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-140vcd}
 \end{longtable}
 }
 
 \subsection{LSE-70 Requirements Coverage}
+\label{sec:LSE-70coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -9733,11 +10158,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-70vcd}
 \end{longtable}
 }
 
 \subsection{LSE-209 Requirements Coverage}
+\label{sec:LSE-209coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -10622,11 +11048,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-209vcd}
 \end{longtable}
 }
 
 \subsection{LDM-554 Requirements Coverage}
+\label{sec:LDM-554coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -10667,7 +11094,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -10694,7 +11121,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -10713,7 +11140,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10733,7 +11160,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -10752,7 +11179,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10764,7 +11191,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10776,7 +11203,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10803,7 +11230,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10823,7 +11250,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -10842,7 +11269,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10869,7 +11296,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10881,7 +11308,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10893,7 +11320,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -10935,7 +11362,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -11022,7 +11449,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -11034,7 +11461,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -11090,7 +11517,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -11147,7 +11574,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -11174,7 +11601,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -11261,7 +11688,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-11-25 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11273,7 +11700,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11285,7 +11712,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11297,7 +11724,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11324,7 +11751,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11336,7 +11763,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11348,7 +11775,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11405,7 +11832,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11417,7 +11844,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11429,7 +11856,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11456,7 +11883,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11468,7 +11895,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11480,7 +11907,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11507,7 +11934,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11594,7 +12021,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11681,7 +12108,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-05-11 \\
-            \vcdDocRef{DMTR-211}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
           \end{tabular} &
           \cndpass \\
@@ -11835,7 +12262,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11855,7 +12282,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -11874,7 +12301,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11901,7 +12328,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -11936,7 +12363,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -11993,7 +12420,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -12050,7 +12477,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -12084,7 +12511,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -12119,7 +12546,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -12146,7 +12573,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \passed \\
@@ -12165,7 +12592,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -12446,7 +12873,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-05-11 \\
-            \vcdDocRef{DMTR-211}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
           \end{tabular} &
           \cndpass \\
@@ -12496,7 +12923,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -12538,7 +12965,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -12557,7 +12984,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -12592,7 +13019,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -12619,7 +13046,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -12646,7 +13073,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -12748,7 +13175,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-05-20 \\
-            \vcdDocRef{DMTR-52}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P42}{LVV-P42} }
           \end{tabular} &
           \cndpass \\
@@ -13232,7 +13659,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-02 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -13244,7 +13671,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-05-11 \\
-            \vcdDocRef{DMTR-211}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
           \end{tabular} &
           \cndpass \\
@@ -13541,7 +13968,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-05-11 \\
-            \vcdDocRef{DMTR-211}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
           \end{tabular} &
           \cndpass \\
@@ -13598,7 +14025,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2020-05-11 \\
-            \vcdDocRef{DMTR-211}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P69}{LVV-P69} }
           \end{tabular} &
           \cndpass \\
@@ -13865,7 +14292,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -13907,7 +14334,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -13964,7 +14391,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14036,7 +14463,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14288,7 +14715,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14330,7 +14757,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14372,7 +14799,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14414,7 +14841,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14576,7 +15003,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14603,7 +15030,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14623,7 +15050,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-11-25 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \passed \\
@@ -14635,7 +15062,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14662,7 +15089,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14734,7 +15161,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14971,7 +15398,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -14998,7 +15425,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -15040,7 +15467,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
           2019-12-09 \\
-            \vcdDocRef{DMTR-161}
+            \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P48}{LVV-P48} }
           \end{tabular} &
           \cndpass \\
@@ -15105,11 +15532,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \end{tabular} &
           & \notexec{} \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LDM-554vcd}
 \end{longtable}
 }
 
 \subsection{LSE-400 Requirements Coverage}
+\label{sec:LSE-400coverage}
 
 \setlength\LTleft{-0.25in}
 \setlength\LTright{-0.5in}
@@ -15285,7 +15713,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \end{tabular} &
         & & \\
   \midrule
-\label{tab:dmvcd}
+\label{tab:LSE-400vcd}
 \end{longtable}
 }
 
