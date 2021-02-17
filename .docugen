@@ -1,3 +1,3 @@
 #!/bin/bash
 docsteady --version
-docsteady generate-vcd --sql True DM jira_docugen.tex
+docsteady generate-vcd --sql True --namespace DM jira_docugen.tex
