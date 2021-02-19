@@ -26,7 +26,6 @@ jobs:
         run: |
           conda init bash
           conda create --name docsteady-env docsteady -c lsst-dm -c conda-forge
-          conda activate docsteady-env
         shell: bash
 
       - name: docugen
