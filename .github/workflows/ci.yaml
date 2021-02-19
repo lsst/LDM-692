@@ -32,12 +32,13 @@ jobs:
         env:
           JIRA_USER: ${{ secrets.JIRA_USER }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+          JIRA_DN: ${{ secrets.JIRA_DB }}
           JIRA_VCD_USER: ${{ secrets.JIRA_VCD_USER }}
           JIRA_VCD_PASSWORD: ${{ secrets.JIRA_VCD_PASSWORD }}
         run: |
           conda info --envs
           source ${CONDA}/bin/activate docsteady-env
-          docsteady --jiradb 140.252.201.12 generate-vcd  jira_docugen.tex
+          docsteady  generate-vcd  jira_docugen.tex
         shell: bash
 
 
