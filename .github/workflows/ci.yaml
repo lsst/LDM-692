@@ -37,7 +37,7 @@ jobs:
         run: |
           conda info --envs
           source ${CONDA}/bin/activate docsteady-env
-          docsteady generate-vcd  jira_docugen.tex
+          docsteady --jiradb 140.252.201.12 generate-vcd  jira_docugen.tex
         shell: bash
 
 
