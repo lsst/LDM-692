@@ -19,3 +19,8 @@ The bin directory of texmf must be in your path for generateAcronyms.py to be fo
 - Live drafts: https://ldm-692.lsst.io
 - GitHub: https://github.com/lsst/LDM-692
 
+jira_docugen.tex
+================
+The github action runs Docsteady which connects to JIRA - the passwords are in the github secrets of the REPO
+JIRA_USERNAME and JIRA_PASSWORD. The values are in the onepassword Architecture  Vault. 
+
