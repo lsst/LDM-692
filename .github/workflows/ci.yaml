@@ -29,7 +29,7 @@ jobs:
           JIRA_VCD_USER: ${{ secrets.JIRA_VCD_USER }}
           JIRA_VCD_PASSWORD: ${{ secrets.JIRA_VCD_PASSWORD }}
         run: |
-          conda create --name docsteady-env docsteady -c lsst-dm -c defaults --override-channels
+          conda create --name docsteady-env docsteady -c lsst-dm -c conda-forge
           conda activate docsteady-env
           docsteady generate-vcd  jira_docugen.tex
 
