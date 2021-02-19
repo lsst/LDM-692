@@ -36,8 +36,7 @@ jobs:
           JIRA_VCD_PASSWORD: ${{ secrets.JIRA_VCD_PASSWORD }}
         run: |
           conda info --envs
-          source /home/runner/.bashrc
-          conda activate docsteady-env
+          source ${CONDA}/bin/activate docsteady-env
           docsteady generate-vcd  jira_docugen.tex
         shell: bash
 
