@@ -24,7 +24,9 @@ jobs:
 
       - name: condaenv
         run: |
+          conda init bash
           conda create --name docsteady-env docsteady -c lsst-dm -c conda-forge
+          conda activate docsteady-env
         shell: bash
 
       - name: docugen
@@ -35,7 +37,6 @@ jobs:
           JIRA_VCD_PASSWORD: ${{ secrets.JIRA_VCD_PASSWORD }}
         run: |
           source /home/runner/.bashrc
-          conda init bash
           conda activate docsteady-env
           docsteady generate-vcd  jira_docugen.tex
         shell: bash
