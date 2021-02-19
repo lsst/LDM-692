@@ -33,6 +33,7 @@ jobs:
           conda init bash
           conda activate docsteady-env
           docsteady generate-vcd  jira_docugen.tex
+        shell: bash
 
 
       - name: TeX build
