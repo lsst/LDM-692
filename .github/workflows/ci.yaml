@@ -1,6 +1,8 @@
 name: CI
 
 "on": [push, pull_request]
+    schedule:
+      - conr: " 5 * * * 1-5
 
 jobs:
   build:
