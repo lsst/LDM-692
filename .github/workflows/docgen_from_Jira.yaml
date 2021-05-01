@@ -42,6 +42,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
+          git add  attachments jira_imgs
           git commit -am "Gitaction update from JIRA." 
           git push
 
@@ -60,4 +61,4 @@ jobs:
           LTD_PASSWORD: ${{ secrets.LTD_PASSWORD }}
           LTD_USERNAME: ${{ secrets.LTD_USERNAME }}
         run: |
-          lander --upload --pdf SCTR-31.pdf --lsstdoc SCTR-31.tex --ltd-product sctr-31
+          lander --upload --pdf LDM-692.pdf --lsstdoc LDM-692.tex --ltd-product ldm-692 
