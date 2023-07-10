@@ -18,7 +18,7 @@ jobs:
       - name: Python install
         run: |
           python -m pip install --upgrade pip
-          python -m pip install "lander<2.0.0"
+          python -m pip install -r requirements.txt
 
       - name: condaenv
         run: |
@@ -28,8 +28,8 @@ jobs:
 
       - name: docugen
         env:
-          JIRA_USER: ${{ secrets.JIRA_USER }} 
-          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }} 
+          JIRA_USER: ${{ secrets.JIRA_USER }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
           JIRA_DB: ${{ secrets.JIRA_DB }}
           JIRA_VCD_USER: ${{ secrets.JIRA_VCD_USER }}
           JIRA_VCD_PASSWORD: ${{ secrets.JIRA_VCD_PASSWORD }}
@@ -37,13 +37,13 @@ jobs:
           source ${CONDA}/bin/activate docsteady-env
           docsteady  generate-vcd  jira_docugen.tex
         shell: bash
- 
+
       - name: Create commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add  attachments jira_imgs
-          git commit -am "Gitaction update from JIRA." 
+          git commit -am "Gitaction update from JIRA."
           git push
 
       - name: Login to Docker Hub
@@ -61,4 +61,4 @@ jobs:
           LTD_PASSWORD: ${{ secrets.LTD_PASSWORD }}
           LTD_USERNAME: ${{ secrets.LTD_USERNAME }}
         run: |
-          lander --upload --pdf LDM-692.pdf --lsstdoc LDM-692.tex --ltd-product ldm-692 
+          lander --upload --pdf LDM-692.pdf --lsstdoc LDM-692.tex --ltd-product ldm-692
