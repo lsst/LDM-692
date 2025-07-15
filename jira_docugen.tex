@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /Users/womullan/LSSTgit/docsteady/src/docsteady/templates/vcd.latex.jinja2.
+% using template at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 0.0.0
+% using docsteady version 3.0.4
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -27,31 +27,41 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  & 
  & 
  & 
- & 504
+ & 477
  & 
- & \textbf{ 784 }
+ & \textbf{ 776 }
 \\ \toprule
-\citeds{LSE-61} & Not Set  &   &   &   & 126  &   & \textbf{ 237 }
+\citeds{LSE-61} & 1a  &   &   &   & 3  &   & \textbf{ 57 }
+ \\ \cdashline{2-8}
+ & 1b  &   &   &   & 60  &   & \textbf{ 117 }
+ \\ \cdashline{2-8}
+ & 2  &   &   &   & 38  &   & \textbf{ 56 }
+ \\ \cdashline{2-8}
+ & 3  &   &   &   & 5  &   & \textbf{ 6 }
+ \\ \cdashline{2-8}
+ & Undefined  &   &   &   & 2  &   & \textbf{ 2 }
+ \\ \cdashline{2-8}
+ & (All)  &   &   &   & 108  &   & \textbf{ 238 }
  \\ \hline
-\citeds{LSE-68} & Not Set  &   &   &   & 19  &   & \textbf{ 19 }
+\citeds{LSE-68} & Undefined  &   &   &   & 19  &   & \textbf{ 19 }
  \\ \hline
-\citeds{LSE-69} & Not Set  &   &   &   & 16  &   & \textbf{ 16 }
+\citeds{LSE-69} & Undefined  &   &   &   & 7  &   & \textbf{ 7 }
  \\ \hline
-\citeds{LSE-72} & Not Set  &   &   &   & 52  &   & \textbf{ 52 }
+\citeds{LSE-72} & Undefined  &   &   &   & 52  &   & \textbf{ 52 }
  \\ \hline
-\citeds{LSE-75} & Not Set  &   &   &   & 9  &   & \textbf{ 9 }
+\citeds{LSE-75} & Undefined  &   &   &   & 9  &   & \textbf{ 9 }
  \\ \hline
-\citeds{LSE-130} & Not Set  &   &   &   & 31  &   & \textbf{ 31 }
+\citeds{LSE-130} & Undefined  &   &   &   & 31  &   & \textbf{ 31 }
  \\ \hline
-\citeds{LSE-131} & Not Set  &   &   &   & 12  &   & \textbf{ 12 }
+\citeds{LSE-131} & Undefined  &   &   &   & 12  &   & \textbf{ 12 }
  \\ \hline
-\citeds{LSE-140} & Not Set  &   &   &   & 30  &   & \textbf{ 30 }
+\citeds{LSE-140} & Undefined  &   &   &   & 30  &   & \textbf{ 30 }
  \\ \hline
-\citeds{LDM-554} & Not Set  &   &   &   & 144  &   & \textbf{ 236 }
+\citeds{LDM-554} & Undefined  &   &   &   & 144  &   & \textbf{ 236 }
  \\ \hline
-\citeds{LSE-400} & Not Set  &   &   &   & 15  &   & \textbf{ 15 }
+\citeds{LSE-400} & Undefined  &   &   &   & 15  &   & \textbf{ 15 }
  \\ \hline
-\citeds{LDM-556} & Not Set  &   &   &   & 50  &   & \textbf{ 127 }
+\citeds{LDM-556} & Undefined  &   &   &   & 50  &   & \textbf{ 127 }
  \\ \hline
 \toprule
 \textbf{ DM Verification E.} & (All)
@@ -61,7 +71,7 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  & 
  & 
  & 
- & \textbf{ 1011 }
+ & \textbf{ 972 }
 \\ \hline
 \caption{Summary overview of all DM~requirements and verification elements.}
 \label{table:summary}
@@ -79,11 +89,11 @@ Table \ref{table:testsummary} provides the Test Cases result summary.
 & \rotatebox[origin=l]{60}{ \textbf{Total}}
 \\ \toprule
 Test Cases Results
-& 
-& 
-& 
-& 634
- & \textbf{ 634 } \\
+& 178
+& 13
+& 3
+& 439
+ & \textbf{ 633 } \\
 \bottomrule
 \caption{Summary overview of DM~test cases executions.}
 \label{table:testsummary}
@@ -180,7 +190,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0002\\\vcdDocRef{LSE-61}~{\tiny
-  }
+ (p. 1b)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-3}{LVV-3}
@@ -191,14 +201,24 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T217}{LVV-T217} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2018-07-04 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
+          \end{tabular} &
+          \cndpass \\
           \cmidrule{3-5}
           & &
         \begin{tabular}{@{}l@{}}
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T101}{LVV-T101} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2024-11-08 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
+          \end{tabular} &
+          \notexec \\
   \midrule
 \label{tab:LSE-61vcd}
 \end{longtable}
@@ -218,7 +238,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   CA-DM-DAQ-ICD-0094\\\vcdDocRef{LSE-68}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-4669}{LVV-4669}
@@ -252,20 +272,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \toprule
 \endhead
   \begin{tabular}{@{}l@{}}
-  CA-DM-CON-ICD-0003\\\vcdDocRef{LSE-69}~{\tiny
-  }
+  CA-DM-CON-ICD-0019\\\vcdDocRef{LSE-69}~{\tiny
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-4843}{LVV-4843}
-    \\\vcdJiraRef{LVV-4843}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-4844}{LVV-4844}
-    \\\vcdJiraRef{LVV-4844}~{\tiny
+    \hypertarget{lvv-4855}{LVV-4855}
+    \\\vcdJiraRef{LVV-4855}~{\tiny
     }
     \end{tabular} &
         & & \\
@@ -288,7 +300,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   OCS-DM-COM-ICD-0040\\\vcdDocRef{LSE-72}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-5237}{LVV-5237}
@@ -323,7 +335,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   DM-TS-CON-ICD-0003\\\vcdDocRef{LSE-75}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-5628}{LVV-5628}
@@ -358,7 +370,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   CA-DM-SUP-ICD-0026\\\vcdDocRef{LSE-130}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-6140}{LVV-6140}
@@ -393,7 +405,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   EP-DM-CON-ICD-0004\\\vcdDocRef{LSE-131}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-6324}{LVV-6324}
@@ -428,19 +440,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   DM-TS-AUX-ICD-0020\\\vcdDocRef{LSE-140}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-6420}{LVV-6420}
     \\\vcdJiraRef{LVV-6420}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-6421}{LVV-6421}
-    \\\vcdJiraRef{LVV-6421}~{\tiny
     }
     \end{tabular} &
         & & \\
@@ -463,7 +467,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   DMS-LSP-REQ-0007\\\vcdDocRef{LDM-554}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-9806}{LVV-9806}
@@ -494,7 +498,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   OCS-EFD-HS-0001\\\vcdDocRef{LSE-400}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-18271}{LVV-18271}
@@ -521,7 +525,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \endhead
   \begin{tabular}{@{}l@{}}
   DMS-MWBT-REQ-0014\\\vcdDocRef{LDM-556}~{\tiny
-  }
+ (p. Undefined)   }
   \end{tabular} &
     \begin{tabular}{@{}l@{}}
     \hypertarget{lvv-19739}{LVV-19739}
