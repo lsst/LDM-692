@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/docsteady/templates/vcd.latex.jinja2.
+% using template at /Users/womullan/LSSTgit/docsteady/src/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 3.0.4
+% using docsteady version 0.0.0
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -16,62 +16,50 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
 % Summary of Summaries
 \begin{longtable}{rp{2cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
  & \rotatebox[origin=l]{60}{ \textbf{Priority}  }
- & \rotatebox[origin=l]{60}{ \textbf{ Fully Verified } {\scriptsize \ref{sec:fullyverified} } }
- & \rotatebox[origin=l]{60}{ \textbf{ Partially Verified } {\scriptsize \ref{sec:partiallyverified} } }
- & \rotatebox[origin=l]{60}{ \textbf{ With Failures } {\scriptsize \ref{sec:withfaulres} } }
+ & \rotatebox[origin=l]{60}{ \textbf{ Verified } {\scriptsize \ref{sec:verified} } }
+ & \rotatebox[origin=l]{60}{ \textbf{ In Verification } {\scriptsize \ref{sec:inverification} } }
  & \rotatebox[origin=l]{60}{ \textbf{ Not Verified } {\scriptsize \ref{sec:notverified} } }
- & \rotatebox[origin=l]{60}{ \textbf{ Not Covered } {\scriptsize \ref{sec:notcovered} } }
  & \rotatebox[origin=l]{60}{ \textbf{ Total } }
 \\ \toprule
 \textbf{ DM Requirements} & (All)
- & 
- & 
- & 
- & 477
- & 
- & \textbf{ 776 }
+ & 165
+ & 135
+ & 414
+ & \textbf{ 714 }
 \\ \toprule
-\citeds{LSE-61} & 1a  &   &   &   & 3  &   & \textbf{ 57 }
+\citeds{LSE-61} & 1a  & 37  & 17  & 3  & \textbf{ 57 }
  \\ \cdashline{2-8}
- & 1b  &   &   &   & 60  &   & \textbf{ 117 }
+ & 1b  & 15  & 43  & 59  & \textbf{ 117 }
  \\ \cdashline{2-8}
- & 2  &   &   &   & 38  &   & \textbf{ 56 }
+ & 2  & 3  & 15  & 38  & \textbf{ 56 }
  \\ \cdashline{2-8}
- & 3  &   &   &   & 5  &   & \textbf{ 6 }
+ & 3  &   & 1  & 5  & \textbf{ 6 }
  \\ \cdashline{2-8}
- & Undefined  &   &   &   & 2  &   & \textbf{ 2 }
+ & Undefined  &   &   & 2  & \textbf{ 2 }
  \\ \cdashline{2-8}
- & (All)  &   &   &   & 108  &   & \textbf{ 238 }
+ & (All)  & 55  & 76  & 107  & \textbf{ 238 }
  \\ \hline
-\citeds{LSE-68} & Undefined  &   &   &   & 19  &   & \textbf{ 19 }
+\citeds{LSE-69} & Undefined  &   &   & 7  & \textbf{ 7 }
  \\ \hline
-\citeds{LSE-69} & Undefined  &   &   &   & 7  &   & \textbf{ 7 }
+\citeds{LSE-72} & Undefined  &   &   & 52  & \textbf{ 52 }
  \\ \hline
-\citeds{LSE-72} & Undefined  &   &   &   & 52  &   & \textbf{ 52 }
+\citeds{LSE-75} & Undefined  &   &   & 9  & \textbf{ 9 }
  \\ \hline
-\citeds{LSE-75} & Undefined  &   &   &   & 9  &   & \textbf{ 9 }
+\citeds{LSE-140} & Undefined  &   &   & 30  & \textbf{ 30 }
  \\ \hline
-\citeds{LSE-130} & Undefined  &   &   &   & 31  &   & \textbf{ 31 }
+\citeds{LDM-554} & Undefined  & 35  & 57  & 144  & \textbf{ 236 }
  \\ \hline
-\citeds{LSE-131} & Undefined  &   &   &   & 12  &   & \textbf{ 12 }
+\citeds{LSE-400} & Undefined  &   &   & 15  & \textbf{ 15 }
  \\ \hline
-\citeds{LSE-140} & Undefined  &   &   &   & 30  &   & \textbf{ 30 }
- \\ \hline
-\citeds{LDM-554} & Undefined  &   &   &   & 144  &   & \textbf{ 236 }
- \\ \hline
-\citeds{LSE-400} & Undefined  &   &   &   & 15  &   & \textbf{ 15 }
- \\ \hline
-\citeds{LDM-556} & Undefined  &   &   &   & 50  &   & \textbf{ 127 }
+\citeds{LDM-556} & Undefined  & 75  & 2  & 50  & \textbf{ 127 }
  \\ \hline
 \toprule
 \textbf{ DM Verification E.} & (All)
 
+ & 191
  & 
  & 
- & 
- & 
- & 
- & \textbf{ 972 }
+ & \textbf{ 787 }
 \\ \hline
 \caption{Summary overview of all DM~requirements and verification elements.}
 \label{table:summary}
@@ -89,10 +77,10 @@ Table \ref{table:testsummary} provides the Test Cases result summary.
 & \rotatebox[origin=l]{60}{ \textbf{Total}}
 \\ \toprule
 Test Cases Results
-& 178
-& 13
-& 3
-& 439
+& 183
+& 14
+& 4
+& 432
  & \textbf{ 633 } \\
 \bottomrule
 \caption{Summary overview of DM~test cases executions.}
@@ -108,34 +96,22 @@ and requirements or verification elements may be associated with multiple test c
 The coverage of each Verification Element and Requirement is characterized by one of the statuses defined below.
 
 
-\subsubsection{Fully Verified}\label{sec:fullyverified}
+\subsubsection{Fully Verified}\label{sec:verified}
 
 These are the Verification Elements and Requirements for which all of the associated Test Cases have been
 successfully executed. The last execution status for all test cases shall be
 \textbf{Passed} or \textbf{Passed w/Deviation}.
 
 
-\subsubsection{Partially Verified}\label{sec:partiallyverified}
+\subsubsection{In Verification}\label{sec:inverification}
 
 These are the Verification Elements and Requirements for which at least one of the associated Test Cases have been
 successfully executed. The last execution status of the test cases shall be
 \textbf{Not Executed}, \textbf{Passed} or \textbf{Passed w/Deviation}.
 
-
-\subsubsection{With Failures}\label{sec:withfaulres}
-
-These are the Verification Elements and Requirements for which at least one of the associated Test Cases
-has a \textbf{Failure} as execution result.
-
-
 \subsubsection{Not Verified}\label{sec:notverified}
 
 These are the Verification Elements and Requirements for which none of the associated Test Cases have been executed.
-
-
-\subsubsection{Not Covered}\label{sec:notcovered}
-
-These are the Verification Elements and Requirements for which there are not any associated Test Cases.
 
 
 \subsection{Test Executions Description}
@@ -224,41 +200,6 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
 \end{longtable}
 }
 
-\subsection{LSE-68 Requirements Coverage}
-\label{sec:LSE-68coverage}
-
-\setlength\LTleft{-0.25in}
-\setlength\LTright{-0.5in}
-{\small
-\begin{longtable}{lllll}
-\caption{ DM LSE-68 Requirements.} \\
-\toprule
-\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
-\toprule
-\endhead
-  \begin{tabular}{@{}l@{}}
-  CA-DM-DAQ-ICD-0094\\\vcdDocRef{LSE-68}~{\tiny
- (p. Undefined)   }
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-4669}{LVV-4669}
-    \\\vcdJiraRef{LVV-4669}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-4670}{LVV-4670}
-    \\\vcdJiraRef{LVV-4670}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-  \midrule
-\label{tab:LSE-68vcd}
-\end{longtable}
-}
-
 \subsection{LSE-69 Requirements Coverage}
 \label{sec:LSE-69coverage}
 
@@ -308,14 +249,6 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     }
     \end{tabular} &
         & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-5238}{LVV-5238}
-    \\\vcdJiraRef{LVV-5238}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
   \midrule
 \label{tab:LSE-72vcd}
 \end{longtable}
@@ -342,87 +275,18 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
     \\\vcdJiraRef{LVV-5628}~{\tiny
     }
     \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-5629}{LVV-5629}
-    \\\vcdJiraRef{LVV-5629}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
+        \begin{tabular}{@{}l@{}}
+        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2228}{LVV-T2228} \\
+        \vcdDocRef{}
+        \end{tabular} &
+          \begin{tabular}{@{}l@{}}
+          2022-05-11 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
+          \end{tabular} &
+          \failed \\
   \midrule
 \label{tab:LSE-75vcd}
-\end{longtable}
-}
-
-\subsection{LSE-130 Requirements Coverage}
-\label{sec:LSE-130coverage}
-
-\setlength\LTleft{-0.25in}
-\setlength\LTright{-0.5in}
-{\small
-\begin{longtable}{lllll}
-\caption{ DM LSE-130 Requirements.} \\
-\toprule
-\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
-\toprule
-\endhead
-  \begin{tabular}{@{}l@{}}
-  CA-DM-SUP-ICD-0026\\\vcdDocRef{LSE-130}~{\tiny
- (p. Undefined)   }
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-6140}{LVV-6140}
-    \\\vcdJiraRef{LVV-6140}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-6141}{LVV-6141}
-    \\\vcdJiraRef{LVV-6141}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-  \midrule
-\label{tab:LSE-130vcd}
-\end{longtable}
-}
-
-\subsection{LSE-131 Requirements Coverage}
-\label{sec:LSE-131coverage}
-
-\setlength\LTleft{-0.25in}
-\setlength\LTright{-0.5in}
-{\small
-\begin{longtable}{lllll}
-\caption{ DM LSE-131 Requirements.} \\
-\toprule
-\textbf{Requirement} & \textbf{Verification Element} & \textbf{Test Case} & \textbf{Last Run} & \textbf{Test Status} \\
-\toprule
-\endhead
-  \begin{tabular}{@{}l@{}}
-  EP-DM-CON-ICD-0004\\\vcdDocRef{LSE-131}~{\tiny
- (p. Undefined)   }
-  \end{tabular} &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-6324}{LVV-6324}
-    \\\vcdJiraRef{LVV-6324}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-6325}{LVV-6325}
-    \\\vcdJiraRef{LVV-6325}~{\tiny
-    }
-    \end{tabular} &
-        & & \\
-  \midrule
-\label{tab:LSE-131vcd}
 \end{longtable}
 }
 
