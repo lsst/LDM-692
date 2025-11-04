@@ -49,3 +49,10 @@ clean :
 	latexmk -c
 	rm *.pdf
 	rm -rf $(VENVDIR)
+	rm -f coverage.json tcresults.json vcd.json ve_model.json
+
+
+# need docteady installed pip install docsteady and 
+# JIRA_USER, JIRA_PASSWORD and ZEPHYR_TOKEN set in env or type in on prompt
+docugen :
+	docsteady generate-vcd --dump=False jira_docugen.tex
