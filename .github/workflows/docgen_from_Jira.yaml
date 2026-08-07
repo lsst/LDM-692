@@ -25,8 +25,8 @@ jobs:
 
       - name: docugen
         env:
-          JIRA_USER: ${{ secrets.JIRA_USER }}
-          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+          JIRA_USER: ${{ secrets.JIRA_CLOUD_USER }}
+          JIRA_PASSWORD: ${{ secrets.JIRA_CLOUD_TOKEN }}
           ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
         run: |
           docsteady  generate-vcd  jira_docugen.tex
