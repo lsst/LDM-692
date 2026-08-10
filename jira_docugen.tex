@@ -1,7 +1,7 @@
 % generated from JIRA project LVV
-% using template at /opt/hostedtoolcache/Python/3.13.11/x64/lib/python3.13/site-packages/docsteady/templates/vcd.latex.jinja2.
+% using template at /Users/womullan/LSSTgit/docsteady/src/docsteady/templates/vcd.latex.jinja2.
 % Collecting data for component: "DM"
-% using docsteady version 3.1.4
+% using docsteady version 0.0.0
 % Please do not edit -- update information in Jira instead
 %
 % This file is meant to be included in LaTeX document in order to provide:
@@ -22,14 +22,14 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  & \rotatebox[origin=l]{60}{ \textbf{ Total } }
 \\ \toprule
 \textbf{ DM Requirements} & (All)
- & 227
- & 449
- & 38
+ & 259
+ & 412
+ & 43
  & \textbf{ 714 }
 \\ \toprule
 \citeds{LSE-61} & 1a  & 48  & 5  & 4  & \textbf{ 57 }
  \\ \cdashline{2-8}
- & 1b  & 64  & 35  & 17  & \textbf{ 116 }
+ & 1b  & 67  & 27  & 22  & \textbf{ 116 }
  \\ \cdashline{2-8}
  & 2  & 5  & 35  & 17  & \textbf{ 57 }
  \\ \cdashline{2-8}
@@ -37,15 +37,15 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
  \\ \cdashline{2-8}
  & Undefined  &   & 2  &   & \textbf{ 2 }
  \\ \cdashline{2-8}
- & (All)  & 117  & 83  & 38  & \textbf{ 238 }
+ & (All)  & 120  & 75  & 43  & \textbf{ 238 }
  \\ \hline
 \citeds{LSE-69} & Undefined  &   & 7  &   & \textbf{ 7 }
  \\ \hline
 \citeds{LSE-72} & Undefined  &   & 52  &   & \textbf{ 52 }
  \\ \hline
-\citeds{LSE-75} & Undefined  &   & 9  &   & \textbf{ 9 }
+\citeds{LSE-75} & Undefined  & 9  &   &   & \textbf{ 9 }
  \\ \hline
-\citeds{LSE-140} & Undefined  &   & 30  &   & \textbf{ 30 }
+\citeds{LSE-140} & Undefined  & 20  & 10  &   & \textbf{ 30 }
  \\ \hline
 \citeds{LDM-554} & Undefined  & 35  & 201  &   & \textbf{ 236 }
  \\ \hline
@@ -56,10 +56,10 @@ Table \ref{table:summary} provides an overview of the requirements and verificat
 \toprule
 \textbf{ DM Verification E.} & (All)
 
- & 266
+ & 297
  & 
  & 
- & \textbf{ 787 }
+ & \textbf{ 786 }
 \\ \hline
 \caption{Summary overview of all DM~requirements and verification elements.}
 \label{table:summary}
@@ -77,11 +77,11 @@ Table \ref{table:testsummary} provides the Test Cases result summary.
 & \rotatebox[origin=l]{60}{ \textbf{Total}}
 \\ \toprule
 Test Cases Results
-& 235
+& 237
 & 13
 & 4
-& 383
- & \textbf{ 635 } \\
+& 380
+ & \textbf{ 634 } \\
 \bottomrule
 \caption{Summary overview of DM~test cases executions.}
 \label{table:testsummary}
@@ -1509,11 +1509,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
+          2026-03-31 \\
             \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0119\\\vcdDocRef{LSE-61}~{\tiny
@@ -3633,11 +3633,11 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \vcdDocRef{LDM-639}
         \end{tabular} &
           \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
+          2026-04-01 \\
             \vcdDocRef{}
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
-          \notexec \\
+          \passed \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0302\\\vcdDocRef{LSE-61}~{\tiny
@@ -6351,12 +6351,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1524}{LVV-T1524} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
-            \vcdDocRef{}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0381\\\vcdDocRef{LSE-61}~{\tiny
@@ -6428,23 +6423,6 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
             {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
           \end{tabular} &
           \passed \\
-      \cmidrule{2-5}
-      &
-    \begin{tabular}{@{}l@{}}
-    \hypertarget{lvv-20584}{LVV-20584}
-    \\\vcdJiraRef{LVV-20584}~{\tiny
- (p. 1b)     }
-    \end{tabular} &
-        \begin{tabular}{@{}l@{}}
-        \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T2905}{LVV-T2905} \\
-        \vcdDocRef{}
-        \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
-            \vcdDocRef{}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
-          \end{tabular} &
-          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0385\\\vcdDocRef{LSE-61}~{\tiny
@@ -6499,12 +6477,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1530}{LVV-T1530} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
-            \vcdDocRef{}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0386\\\vcdDocRef{LSE-61}~{\tiny
@@ -6559,12 +6532,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1562}{LVV-T1562} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
-            \vcdDocRef{}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0390\\\vcdDocRef{LSE-61}~{\tiny
@@ -6579,12 +6547,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1563}{LVV-T1563} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
-            \vcdDocRef{}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0389\\\vcdDocRef{LSE-61}~{\tiny
@@ -6599,12 +6562,7 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T1564}{LVV-T1564} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          \begin{tabular}{@{}l@{}}
-          2024-11-08 \\
-            \vcdDocRef{}
-            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
-          \end{tabular} &
-          \notexec \\
+          & \notexec{} \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0394\\\vcdDocRef{LSE-61}~{\tiny
@@ -6914,7 +6872,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T3074}{LVV-T3074} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2026-04-01 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0404\\\vcdDocRef{LSE-61}~{\tiny
@@ -6949,7 +6912,12 @@ For a full description of the prioritization levels, see \citeds{LSE-61}.
         \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCase/LVV-T3101}{LVV-T3101} \\
         \vcdDocRef{LDM-639}
         \end{tabular} &
-          & \notexec{} \\
+          \begin{tabular}{@{}l@{}}
+          2026-04-01 \\
+            \vcdDocRef{}
+            {\scriptsize \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/}{} }
+          \end{tabular} &
+          \notexec \\
   \midrule
   \begin{tabular}{@{}l@{}}
   DMS-REQ-0400\\\vcdDocRef{LSE-61}~{\tiny
